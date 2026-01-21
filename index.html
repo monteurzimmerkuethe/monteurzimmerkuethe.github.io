@@ -6,8 +6,8 @@
   <title>Monteurzimmer & Monteurwohnungen Düsseldorf & Wuppertal | ab 20 €</title>
 
   <!-- SEO -->
-  <meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal. Einzelbetten, kostenlose Parkplätze, WLAN, Nähe A46. Ideal für Monteure, Handwerker & Firmen. Ab 20 € pro Person & Nacht.">
-  <meta name="keywords" content="Monteurzimmer Düsseldorf, Monteurwohnung Düsseldorf, Monteurzimmer Wuppertal, Monteurwohnung Wuppertal">
+  <meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal. Einzelbetten, WLAN, kostenlose Parkplätze, Nähe A46. Ideal für Monteure, Handwerker & Firmen. Ab 20 € pro Person & Nacht.">
+  <meta name="keywords" content="Monteurzimmer Düsseldorf, Monteurwohnung Düsseldorf, Monteurzimmer Wuppertal, Monteurwohnung Wuppertal, Monteurunterkunft A46">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font -->
@@ -17,15 +17,18 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #f5f5f5;
+      background: #f4f4f4;
       color: #222;
       line-height: 1.6;
     }
 
-    /* HEADER */
+    /* STICKY HEADER */
     header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       background: #1e1e1e;
-      padding: 15px 25px;
+      padding: 14px 25px;
     }
 
     nav {
@@ -35,7 +38,7 @@
     }
 
     nav a {
-      color: #f5f5f5;
+      color: #fff;
       text-decoration: none;
       font-weight: 500;
     }
@@ -54,7 +57,7 @@
     }
 
     .hero h1 {
-      font-size: 2.3rem;
+      font-size: 2.4rem;
       margin-bottom: 10px;
     }
 
@@ -146,6 +149,22 @@
       font-style: italic;
     }
 
+    /* MAPS */
+    .maps {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .maps iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 12px;
+      filter: grayscale(100%);
+    }
+
     /* FOOTER */
     footer {
       background: #1e1e1e;
@@ -193,7 +212,8 @@
     }
 
     @media (max-width: 768px) {
-      .footer-grid {
+      .footer-grid,
+      .maps {
         grid-template-columns: 1fr;
         text-align: center;
       }
@@ -244,6 +264,48 @@
         <p>Haaner Straße 30 · Ruhige Lage</p>
         <a href="wuppertal.html">Mehr erfahren →</a>
       </div>
+    </div>
+  </div>
+
+  <div class="seo-text">
+    <h2>Monteurunterkünfte für Firmen & Handwerker</h2>
+    <p>
+      Unsere Monteurzimmer und Monteurwohnungen in Düsseldorf und Wuppertal
+      eignen sich ideal für längere Aufenthalte ab 7 Tagen bis mehrere Monate.
+      Einzelbetten, WLAN, Waschmaschine und kostenlose Parkplätze gehören zur Ausstattung.
+      Die Nähe zur A46 ermöglicht schnelle Einsätze in Essen, Solingen, Haan,
+      Mettmann, Remscheid, Ratingen, Dormagen und im gesamten Bergischen Land.
+    </p>
+  </div>
+
+  <h2>Standorte auf Google Maps</h2>
+  <div class="maps">
+    <iframe src="https://www.google.com/maps?q=Erbacher+Weg+17,+40227+Düsseldorf&output=embed"></iframe>
+    <iframe src="https://www.google.com/maps?q=Haaner+Straße+30,+42329+Wuppertal&output=embed"></iframe>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Was unsere Gäste sagen</h2>
+
+  <div class="reviews">
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      Sehr saubere Unterkunft, Parkplatz direkt vor dem Haus,
+      schnelle Anbindung an die Autobahn.
+      <span>– Firma aus Düsseldorf</span>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      Ruhige Lage, WLAN stabil, ideal für längere Aufenthalte.
+      <span>– Handwerksbetrieb aus Essen</span>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      Freundlicher Vermieter, flexible Buchung, sehr gutes Preis-Leistungs-Verhältnis.
+      <span>– Subunternehmer Bergisches Land</span>
     </div>
   </div>
 </div>
