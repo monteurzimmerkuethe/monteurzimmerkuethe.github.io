@@ -2,22 +2,21 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Monteurzimmer & Monteurwohnungen | Wuppertal & Düsseldorf</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta name="description" content="Monteurzimmer & Monteurwohnungen in Wuppertal und Düsseldorf. Ab 20€ pro Person/Nacht. WLAN, Einzelbetten, Waschmaschine, kostenlose Parkplätze.">
+  <title>Monteurzimmer Küthe – Düsseldorf & Wuppertal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      line-height: 1.6;
+      background: #f5f5f5;
       color: #222;
     }
 
     header {
       background: #1f3c88;
-      padding: 15px 25px;
+      padding: 15px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -25,14 +24,14 @@
 
     header h1 {
       color: #fff;
-      font-size: 20px;
       margin: 0;
+      font-size: 20px;
     }
 
     nav a {
       color: #fff;
-      margin-left: 20px;
       text-decoration: none;
+      margin-left: 20px;
       font-weight: bold;
     }
 
@@ -41,104 +40,99 @@
     }
 
     .hero {
-      background: #e9ecf3;
-      padding: 60px 20px;
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.55);
+      color: #fff;
+      padding: 30px 40px;
       text-align: center;
+      border-radius: 6px;
     }
 
-    .hero h2 {
-      font-size: 42px;
-      margin-bottom: 10px;
+    .hero-text h2 {
+      margin: 0 0 10px;
+      font-size: 36px;
     }
 
-    .hero p {
+    .hero-text p {
+      margin: 0;
       font-size: 18px;
-      max-width: 800px;
-      margin: auto;
     }
 
-    .container {
+    .content {
       max-width: 1100px;
-      margin: 50px auto;
+      margin: 40px auto;
       padding: 0 20px;
     }
 
-    .locations {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
+    .intro {
+      text-align: center;
+      margin-bottom: 50px;
     }
 
-    .location-box {
+    .cities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .city-card {
       background: #fff;
-      border-radius: 10px;
+      border-radius: 6px;
       overflow: hidden;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
-    .location-box img {
+    .city-card img {
       width: 100%;
       height: 220px;
       object-fit: cover;
     }
 
-    .location-box div {
-      padding: 20px;
+    .city-card h3 {
+      margin: 20px 0 10px;
     }
 
-    .location-box h3 {
-      margin-top: 0;
+    .city-card p {
+      padding: 0 20px 20px;
     }
 
-    .location-box a {
+    .city-card a {
       display: inline-block;
-      margin-top: 15px;
-      padding: 12px 20px;
+      margin-bottom: 20px;
+      padding: 10px 20px;
       background: #1f3c88;
       color: #fff;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 4px;
     }
 
-    .features {
-      background: #fff;
-      padding: 40px 20px;
-      margin-top: 60px;
-    }
-
-    .features ul {
-      max-width: 800px;
-      margin: auto;
-      list-style: none;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-    }
-
-    .features li {
-      background: #f0f2f8;
-      padding: 15px;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-
-    .contact {
-      text-align: center;
-      margin: 60px 0;
-    }
-
-    .contact p {
-      font-size: 18px;
-      margin: 10px 0;
+    .city-card a:hover {
+      background: #162d63;
     }
 
     footer {
       background: #222;
-      color: #aaa;
+      color: #fff;
       text-align: center;
       padding: 20px;
+      margin-top: 60px;
     }
   </style>
 </head>
@@ -155,77 +149,45 @@
 </header>
 
 <section class="hero">
-  <h2>Monteurzimmer & Monteurwohnungen</h2>
-  <p>
-    Wuppertal & Düsseldorf – ab <strong>20 € pro Person / Nacht</strong><br>
-    Ideal für Monteure, Firmen & Handwerker
-  </p>
-</section>
-
-<div class="container">
-
-  <p>
-    Wir bieten moderne, voll ausgestattete Monteurwohnungen in Wuppertal und Düsseldorf.
-    Alle Unterkünfte verfügen über Einzelbetten, WLAN, Waschmaschine sowie kostenlose Parkplätze
-    direkt vor dem Haus. Dank der Nähe zur Autobahn sind Düsseldorf, Essen und das Bergische Land
-    schnell erreichbar.
-  </p>
-
-  <div class="locations">
-
-    <!-- WUPPERTAL -->
-    <div class="location-box">
-      <img src="images/wuppertal/haus/haus-1.jpg" alt="Monteurwohnung Wuppertal">
-      <div>
-        <h3>Wuppertal – Vohwinkel</h3>
-        <p>
-          Haaner Straße 30<br>
-          Nähe A46 – schnelle Verbindung nach Düsseldorf & Essen<br>
-          2 Wohnungen, bis zu 8 Personen
-        </p>
-        <a href="wuppertal.html">Mehr zu Wuppertal</a>
-      </div>
-    </div>
-
-    <!-- DÜSSELDORF -->
-    <div class="location-box">
-      <img src="images/duesseldorf/haus/haus-1.jpg" alt="Monteurwohnung Düsseldorf">
-      <div>
-        <h3>Düsseldorf</h3>
-        <p>
-          Zentrale Lage<br>
-          Ideal für Monteure & Handwerker<br>
-          Gute Autobahnanbindung
-        </p>
-        <a href="duesseldorf.html">Mehr zu Düsseldorf</a>
-      </div>
-    </div>
-
+  <img src="images/start-haus.jpg" alt="Monteurwohnungen Außenansicht">
+  <div class="hero-text">
+    <h2>Monteurwohnungen</h2>
+    <p>Düsseldorf & Wuppertal</p>
   </div>
-
-</div>
-
-<section class="features">
-  <ul>
-    <li>✔ Einzelbetten in allen Zimmern</li>
-    <li>✔ WLAN inklusive</li>
-    <li>✔ Waschmaschine in jeder Wohnung</li>
-    <li>✔ Kostenlose Parkplätze vor dem Haus</li>
-    <li>✔ Voll ausgestattete Küche & Bad</li>
-    <li>✔ Ideal für Firmen & Langzeitaufenthalte</li>
-  </ul>
 </section>
 
-<div class="contact">
-  <h2>Kontakt & Buchung</h2>
-  <p>📞 0178 2145052</p>
-  <p>📞 0172 2145052</p>
-  <p>📧 mietzimmerkuethe@web.de</p>
-  <p>WhatsApp & Anruf möglich</p>
+<div class="content">
+
+  <section class="intro">
+    <h2>Komfortable Unterkünfte für Monteure</h2>
+    <p>
+      Unsere vollständig ausgestatteten Monteurwohnungen in Düsseldorf und Wuppertal
+      bieten Komfort, Ruhe und eine ideale Lage für berufliche Aufenthalte.
+    </p>
+  </section>
+
+  <section class="cities">
+
+    <div class="city-card">
+      <img src="images/wuppertal/wohnung-1/schlafzimmer/schlafzimmer-1.jpg" alt="Wuppertal">
+      <h3>Wuppertal</h3>
+      <p>Moderne Monteurwohnungen mit mehreren Zimmern, Küche und Bad.</p>
+      <a href="wuppertal.html">Zu Wuppertal</a>
+    </div>
+
+    <div class="city-card">
+      <img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-1.jpg" alt="Düsseldorf">
+      <h3>Düsseldorf</h3>
+      <p>Zentral gelegene Monteurwohnungen mit kompletter Ausstattung.</p>
+      <a href="duesseldorf.html">Zu Düsseldorf</a>
+    </div>
+
+  </section>
+
 </div>
 
 <footer>
-  © Monteurzimmer Küthe – Wuppertal & Düsseldorf
+  © Monteurzimmer Küthe
 </footer>
 
 </body>
