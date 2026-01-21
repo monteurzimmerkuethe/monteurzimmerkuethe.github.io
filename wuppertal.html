@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Monteurwohnungen Wuppertal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
@@ -18,54 +18,42 @@
     }
 
     nav a {
-      color: white;
+      color: #fff;
       margin-right: 20px;
       text-decoration: none;
       font-weight: bold;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
-
     .container {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 0 15px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
     }
 
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin-top: 50px;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
-    }
-
-    h3 {
+    h1, h2, h3 {
       margin-top: 30px;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 15px;
       margin-top: 15px;
     }
 
     .gallery img {
       width: 100%;
-      border-radius: 8px;
+      height: auto;
+      border-radius: 6px;
     }
 
     footer {
-      margin-top: 60px;
-      padding: 20px;
       text-align: center;
-      background: #222;
-      color: #aaa;
+      padding: 20px;
+      background: #eee;
+      margin-top: 40px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -84,7 +72,7 @@
 
   <h1>Monteurwohnungen Wuppertal</h1>
 
-  <!-- ================= WOHNUNG 1 ================= -->
+  <!-- ==================== WOHNUNG 1 ==================== -->
   <h2>Wohnung 1</h2>
 
   <h3>Schlafzimmer</h3>
@@ -112,10 +100,10 @@
     <img src="images/wuppertal/wohnung-1/bad/bad-3.jpg">
   </div>
 
-  <!-- ================= WOHNUNG 2 ================= -->
-  <h2>wohnung 2</h2>
+  <!-- ==================== WOHNUNG 2 ==================== -->
+  <h2>Wohnung 2</h2>
 
-  <h3>schlafzimmer</h3>
+  <h3>Schlafzimmer</h3>
   <div class="gallery">
     <img src="images/wuppertal/wohnung-2/schlafzimmer/schlafzimmer-1.jpg">
     <img src="images/wuppertal/wohnung-2/schlafzimmer/schlafzimmer-2.jpg">
@@ -124,7 +112,7 @@
     <img src="images/wuppertal/wohnung-2/schlafzimmer/schlafzimmer-5.jpg">
   </div>
 
-  <h3>kueche</h3>
+  <h3>Küche</h3>
   <div class="gallery">
     <img src="images/wuppertal/wohnung-2/kueche/kueche-1.jpg">
     <img src="images/wuppertal/wohnung-2/kueche/kueche-2.jpg">
@@ -132,7 +120,7 @@
     <img src="images/wuppertal/wohnung-2/kueche/kueche-4.jpg">
   </div>
 
-  <h3>bad</h3>
+  <h3>Bad</h3>
   <div class="gallery">
     <img src="images/wuppertal/wohnung-2/bad/bad-1.jpg">
     <img src="images/wuppertal/wohnung-2/bad/bad-2.jpg">
