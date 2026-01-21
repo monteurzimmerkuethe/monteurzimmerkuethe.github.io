@@ -7,7 +7,7 @@
 
   <!-- SEO -->
   <meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal. Einzelbetten, kostenlose Parkplätze, WLAN, Nähe A46. Ideal für Monteure, Handwerker & Firmen. Ab 20 € pro Person & Nacht.">
-  <meta name="keywords" content="Monteurzimmer Düsseldorf, Monteurwohnung Düsseldorf, Monteurzimmer Wuppertal, Monteurwohnung Wuppertal, Monteurunterkunft, Monteure Unterkunft A46">
+  <meta name="keywords" content="Monteurzimmer Düsseldorf, Monteurwohnung Düsseldorf, Monteurzimmer Wuppertal, Monteurwohnung Wuppertal, Monteurunterkunft A46">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Google Font -->
@@ -60,7 +60,7 @@
 
     .hero p {
       font-size: 1.1rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
 
@@ -73,7 +73,7 @@
 
     h2 {
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
     /* CARDS */
@@ -109,11 +109,37 @@
       text-decoration: none;
     }
 
-    /* TEXTBLOCK */
+    /* SEO TEXT */
     .seo-text {
       max-width: 900px;
       margin: auto;
-      font-size: 1rem;
+    }
+
+    /* REVIEWS */
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .review {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .review .stars {
+      color: #f59e0b;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .review span {
+      font-size: 0.85rem;
+      color: #555;
+      font-style: italic;
     }
 
     /* FOOTER */
@@ -144,6 +170,28 @@
       opacity: 0.85;
     }
 
+    /* WHATSAPP BUTTON */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 50px;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      z-index: 9999;
+    }
+
+    .whatsapp-float:hover {
+      background: #1ebe5d;
+    }
+
     @media (max-width: 768px) {
       .footer-grid {
         grid-template-columns: 1fr;
@@ -152,6 +200,10 @@
 
       .hero h1 {
         font-size: 1.7rem;
+      }
+
+      .whatsapp-float span {
+        display: none;
       }
     }
   </style>
@@ -180,7 +232,7 @@
 
   <div class="cards">
     <div class="card">
-      <img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-1.jpg" alt="Monteurzimmer Düsseldorf">
+      <img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-1.jpg">
       <div class="content">
         <h3>Düsseldorf</h3>
         <p>Erbacher Weg 17 · Nähe A46 · Ideal für Firmen & Langzeitmiete.</p>
@@ -189,45 +241,48 @@
     </div>
 
     <div class="card">
-      <img src="images/wuppertal/haus-1.jpg" alt="Monteurzimmer Wuppertal">
+      <img src="images/wuppertal/haus-1.jpg">
       <div class="content">
         <h3>Wuppertal</h3>
-        <p>Haaner Straße 30 · Ruhige Lage · Schnelle Anbindung an Düsseldorf.</p>
+        <p>Haaner Straße 30 · Ruhige Lage · Schnelle Anbindung.</p>
         <a href="wuppertal.html">Zur Unterkunft →</a>
       </div>
     </div>
   </div>
 
-  <!-- SEO TEXT -->
   <div class="seo-text">
     <h2>Monteurunterkünfte für Firmen, Monteure & Handwerker</h2>
-
     <p>
-      Unsere <strong>Monteurzimmer und Monteurwohnungen in Düsseldorf und Wuppertal</strong>
-      richten sich gezielt an Monteure, Handwerker sowie Firmen und Subunternehmer,
-      die eine zuverlässige Unterkunft für <strong>mehrere Tage, Wochen oder Monate</strong> suchen.
+      Unsere Monteurzimmer und Monteurwohnungen in Düsseldorf und Wuppertal
+      eignen sich ideal für längere Aufenthalte ab 7 Tagen bis mehrere Monate.
+      Als direkter Vermieter – ohne Vermittlungsplattform – bieten wir faire Preise,
+      flexible An- und Abreise sowie Firmenrechnungen.
     </p>
+  </div>
+</div>
 
-    <p>
-      Alle Unterkünfte sind vollständig ausgestattet und verfügen über
-      <strong>Einzelbetten</strong>, <strong>kostenloses WLAN</strong>,
-      <strong>Waschmaschinen</strong> sowie <strong>kostenlose Parkplätze</strong>
-      direkt an der Unterkunft. Durch die Nähe zur <strong>Autobahn A46</strong>
-      sind Düsseldorf, Essen und das gesamte Bergische Land schnell erreichbar.
-    </p>
+<div class="container">
+  <h2>Was unsere Gäste sagen</h2>
 
-    <p>
-      Unsere Monteurunterkünfte sind ideal gelegen für Einsätze in
-      <strong>Essen, Solingen, Mettmann, Haan, Neuss, Hilden, Remscheid,
-      Ratingen, Dormagen</strong> sowie im gesamten <strong>Bergischen Land</strong>.
-    </p>
+  <div class="reviews">
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      Sehr saubere Unterkunft, Parkplatz direkt vor dem Haus,
+      schnelle Anbindung an die Autobahn.
+      <span>– Firma aus Düsseldorf</span>
+    </div>
 
-    <p>
-      Die Preise beginnen bereits <strong>ab 20 € pro Person und Nacht</strong>.
-      Als <strong>direkter Vermieter</strong> – ohne Vermittlungsplattform –
-      bieten wir flexible An- und Abreise sowie <strong>Firmenrechnungen</strong> an.
-      Buchungen sind bequem per <strong>Telefon, WhatsApp oder E-Mail</strong> möglich.
-    </p>
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      Ruhige Lage, WLAN stabil, ideal für längere Aufenthalte.
+      <span>– Handwerksbetrieb aus Essen</span>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      Freundlicher Vermieter, flexible Buchung, sehr gutes Preis-Leistungs-Verhältnis.
+      <span>– Subunternehmer Bergisches Land</span>
+    </div>
   </div>
 </div>
 
@@ -235,16 +290,15 @@
   <div class="footer-grid">
     <div>
       <h4>📞 Kontakt</h4>
-      <p>Telefon: <a href="tel:01782145052">0178 2145052</a></p>
-      <p>Telefon: <a href="tel:01722145052">0172 2145052</a></p>
-      <p>✉️ <a href="mailto:mietzimmerkuethe@web.de">mietzimmerkuethe@web.de</a></p>
+      <p><a href="tel:01782145052">0178 2145052</a></p>
+      <p><a href="tel:01722145052">0172 2145052</a></p>
+      <p><a href="mailto:mietzimmerkuethe@web.de">mietzimmerkuethe@web.de</a></p>
     </div>
 
     <div>
       <h4>📍 Standorte</h4>
       <p>Düsseldorf – Erbacher Weg 17</p>
       <p>Wuppertal – Haaner Straße 30</p>
-      <p><a href="https://wa.me/491782145052" target="_blank">💬 WhatsApp schreiben</a></p>
       <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
     </div>
   </div>
@@ -253,6 +307,11 @@
     © 2026 Monteurzimmer Küthe – Düsseldorf & Wuppertal
   </div>
 </footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp-float" href="https://wa.me/491782145052" target="_blank">
+  💬 <span>WhatsApp schreiben</span>
+</a>
 
 </body>
 </html>
