@@ -3,165 +3,156 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Monteurzimmer Düsseldorf & Wuppertal | Ab 20 € – Küthe</title>
-  <meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal. Einzelbetten, WLAN, Parkplätze, Autobahn A46. Ideal für Firmen & Handwerker. Ab 20 € pro Nacht.">
+  <title>Monteurzimmer & Monteurwohnungen Düsseldorf & Wuppertal | ab 20 €</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal. Einzelbetten, kostenlose Parkplätze, WLAN, Nähe A46. Ideal für Monteure, Handwerker & Firmen. Ab 20 € pro Person & Nacht.">
+  <meta name="keywords" content="Monteurzimmer Düsseldorf, Monteurwohnung Düsseldorf, Monteurzimmer Wuppertal, Monteurwohnung Wuppertal, Monteurunterkunft, Monteure Unterkunft A46">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    * { box-sizing: border-box; }
-
     body {
       margin: 0;
-      font-family: 'Poppins', system-ui, sans-serif;
-      background: #f5f7fb;
-      color: #1f2937;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f9;
+      color: #222;
       line-height: 1.6;
     }
 
-    h1, h2, h3 { font-weight: 600; }
-
     /* HEADER */
     header {
-      background: #0f172a;
-      padding: 18px 30px;
+      background: #1f3c88;
+      padding: 15px 25px;
     }
 
     nav {
-      max-width: 1150px;
-      margin: auto;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav .logo {
-      color: #ffffff;
-      font-size: 20px;
-      font-weight: 600;
+      justify-content: center;
+      gap: 30px;
     }
 
     nav a {
-      color: #e5e7eb;
+      color: #fff;
       text-decoration: none;
-      margin-left: 25px;
       font-weight: 500;
     }
 
-    nav a:hover { color: #ffffff; }
-
-    /* HERO */
-    .hero { position: relative; }
-
-    .hero img {
-      width: 100%;
-      height: 440px;
-      object-fit: cover;
+    nav a:hover {
+      text-decoration: underline;
     }
 
-    .hero-text {
-      position: absolute;
-      bottom: 40px;
-      left: 40px;
-      background: rgba(15,23,42,0.65);
-      color: #ffffff;
-      padding: 25px 30px;
-      border-radius: 12px;
-      max-width: 90%;
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url("images/start-haus.jpg") center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: auto;
     }
 
     /* CONTENT */
     .container {
-      max-width: 1150px;
-      margin: 70px auto;
-      padding: 0 20px;
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
     }
 
     /* CARDS */
     .cards {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 35px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-bottom: 60px;
     }
 
     .card {
-      background: #ffffff;
-      border-radius: 16px;
+      background: #fff;
+      border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-      transition: transform 0.25s ease;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
     }
-
-    .card:hover { transform: translateY(-6px); }
 
     .card img {
       width: 100%;
-      height: 240px;
+      height: 200px;
       object-fit: cover;
     }
 
-    .card .content { padding: 25px; }
+    .card .content {
+      padding: 20px;
+    }
 
     .card a {
       display: inline-block;
-      margin-top: 12px;
+      margin-top: 10px;
+      color: #1f3c88;
       font-weight: 600;
-      color: #0f172a;
       text-decoration: none;
+    }
+
+    /* TEXTBLOCK */
+    .seo-text {
+      max-width: 900px;
+      margin: auto;
+      font-size: 1rem;
     }
 
     /* FOOTER */
-    .footer {
-      background: #0f172a;
-      color: #e5e7eb;
-      padding: 60px 20px;
-      margin-top: 80px;
+    footer {
+      background: #1f3c88;
+      color: #fff;
+      margin-top: 60px;
+      padding: 45px 20px;
     }
 
-    .footer-content {
-      max-width: 1150px;
+    .footer-grid {
+      max-width: 1100px;
       margin: auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 50px;
+      gap: 30px;
     }
 
-    .footer h3 { color: #ffffff; }
-
-    .footer a {
-      color: #e5e7eb;
-      text-decoration: none;
-    }
-
-    .footer a:hover { color: #93c5fd; }
-
-    .whatsapp-btn {
-      display: inline-block;
-      margin-top: 12px;
-      background: #22c55e;
-      color: #ffffff !important;
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-weight: 600;
+    footer a {
+      color: #fff;
+      text-decoration: underline;
     }
 
     .footer-bottom {
-      margin-top: 50px;
       text-align: center;
+      margin-top: 30px;
       font-size: 0.9rem;
-      color: #9ca3af;
+      opacity: 0.85;
     }
 
     @media (max-width: 768px) {
-      .cards,
-      .footer-content { grid-template-columns: 1fr; }
-      .hero-text { left: 20px; right: 20px; bottom: 20px; }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+      }
     }
   </style>
 </head>
@@ -170,32 +161,29 @@
 
 <header>
   <nav>
-    <div class="logo">Monteurzimmer Küthe</div>
-    <div>
-      <a href="index.html">Startseite</a>
-      <a href="duesseldorf.html">Düsseldorf</a>
-      <a href="wuppertal.html">Wuppertal</a>
-    </div>
+    <a href="index.html">Startseite</a>
+    <a href="duesseldorf.html">Düsseldorf</a>
+    <a href="wuppertal.html">Wuppertal</a>
   </nav>
 </header>
 
-<div class="hero">
-  <img src="images/start-haus.jpg" alt="Monteurzimmer Küthe">
-  <div class="hero-text">
-    <h1>Monteurzimmer in Düsseldorf & Wuppertal</h1>
-    <p>Ab 20 € pro Nacht · Einzelbetten · WLAN · Parkplätze · A46</p>
-  </div>
-</div>
+<section class="hero">
+  <h1>Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal</h1>
+  <p>
+    Komfortable Unterkünfte für Monteure, Handwerker und Firmen –  
+    Einzelbetten, kostenlose Parkplätze, WLAN & flexible Buchung ab 7 Tagen.
+  </p>
+</section>
 
 <div class="container">
-  <h2>Unsere Monteurunterkünfte</h2>
+  <h2>Unsere Standorte</h2>
 
   <div class="cards">
     <div class="card">
-      <img src="images/duesseldorf/wohnung-1/haus-1.jpg" alt="Monteurzimmer Düsseldorf">
+      <img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-1.jpg" alt="Monteurzimmer Düsseldorf">
       <div class="content">
         <h3>Düsseldorf</h3>
-        <p>Moderne Monteurwohnungen in zentraler Lage – ideal für Firmen & Handwerker.</p>
+        <p>Erbacher Weg 17 · Nähe A46 · Ideal für Firmen & Langzeitmiete.</p>
         <a href="duesseldorf.html">Zur Unterkunft →</a>
       </div>
     </div>
@@ -204,71 +192,65 @@
       <img src="images/wuppertal/haus-1.jpg" alt="Monteurzimmer Wuppertal">
       <div class="content">
         <h3>Wuppertal</h3>
-        <p>Ruhige, voll ausgestattete Wohnungen nahe der Autobahn A46.</p>
+        <p>Haaner Straße 30 · Ruhige Lage · Schnelle Anbindung an Düsseldorf.</p>
         <a href="wuppertal.html">Zur Unterkunft →</a>
       </div>
     </div>
   </div>
+
+  <!-- SEO TEXT -->
+  <div class="seo-text">
+    <h2>Monteurunterkünfte für Firmen, Monteure & Handwerker</h2>
+
+    <p>
+      Unsere <strong>Monteurzimmer und Monteurwohnungen in Düsseldorf und Wuppertal</strong>
+      richten sich gezielt an Monteure, Handwerker sowie Firmen und Subunternehmer,
+      die eine zuverlässige Unterkunft für <strong>mehrere Tage, Wochen oder Monate</strong> suchen.
+    </p>
+
+    <p>
+      Alle Unterkünfte sind vollständig ausgestattet und verfügen über
+      <strong>Einzelbetten</strong>, <strong>kostenloses WLAN</strong>,
+      <strong>Waschmaschinen</strong> sowie <strong>kostenlose Parkplätze</strong>
+      direkt an der Unterkunft. Durch die Nähe zur <strong>Autobahn A46</strong>
+      sind Düsseldorf, Essen und das gesamte Bergische Land schnell erreichbar.
+    </p>
+
+    <p>
+      Unsere Monteurunterkünfte sind ideal gelegen für Einsätze in
+      <strong>Essen, Solingen, Mettmann, Haan, Neuss, Hilden, Remscheid,
+      Ratingen, Dormagen</strong> sowie im gesamten <strong>Bergischen Land</strong>.
+    </p>
+
+    <p>
+      Die Preise beginnen bereits <strong>ab 20 € pro Person und Nacht</strong>.
+      Als <strong>direkter Vermieter</strong> – ohne Vermittlungsplattform –
+      bieten wir flexible An- und Abreise sowie <strong>Firmenrechnungen</strong> an.
+      Buchungen sind bequem per <strong>Telefon, WhatsApp oder E-Mail</strong> möglich.
+    </p>
+  </div>
 </div>
 
-<div class="container">
-  <h2>Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal</h2>
-
-  <p>
-    Unsere Monteurzimmer und Monteurwohnungen in <strong>Düsseldorf</strong> und
-    <strong>Wuppertal</strong> sind ideal für Firmen, Handwerker und Monteure.
-    Alle Unterkünfte sind modern eingerichtet, ruhig gelegen und vollständig ausgestattet.
-  </p>
-
-  <p>
-    Jede Wohnung verfügt über <strong>Einzelbetten</strong>, <strong>WLAN</strong>,
-    <strong>Waschmaschine</strong> sowie <strong>kostenlose Parkplätze</strong>.
-    Dank der Nähe zur <strong>Autobahn A46</strong> sind Düsseldorf, Essen und das
-    Bergische Land schnell erreichbar.
-  </p>
-
-  <p>
-    Unsere Preise beginnen bereits <strong>ab 20 € pro Person und Nacht</strong>.
-    Kurz- und Langzeitaufenthalte sind möglich.
-  </p>
-</div>
-
-<footer class="footer">
-  <div class="footer-content">
-
+<footer>
+  <div class="footer-grid">
     <div>
-      <h3>📍 Standorte</h3>
-      <p>
-        <a href="https://www.google.com/maps?q=Erbacher+Weg+17,+40227+Düsseldorf" target="_blank">
-          Düsseldorf – Erbacher Weg 17
-        </a>
-      </p>
-      <p>
-        <a href="https://www.google.com/maps?q=Haaner+Straße+30,+42329+Wuppertal" target="_blank">
-          Wuppertal – Haaner Straße 30
-        </a>
-      </p>
+      <h4>📞 Kontakt</h4>
+      <p>Telefon: <a href="tel:01782145052">0178 2145052</a></p>
+      <p>Telefon: <a href="tel:01722145052">0172 2145052</a></p>
+      <p>✉️ <a href="mailto:mietzimmerkuethe@web.de">mietzimmerkuethe@web.de</a></p>
     </div>
 
     <div>
-      <h3>📞 Kontakt</h3>
-      <p><a href="tel:01782145052">0178 2145052</a></p>
-      <p><a href="tel:01722145052">0172 2145052</a></p>
-      <p><a href="mailto:mietzimmerkuethe@web.de">mietzimmerkuethe@web.de</a></p>
-
-      <a class="whatsapp-btn" href="https://wa.me/491782145052" target="_blank">
-        💬 WhatsApp schreiben
-      </a>
-
-      <h3 style="margin-top:16px;">⚖️ Rechtliches</h3>
-      <p><a href="impressum.html">Impressum</a></p>
-      <p><a href="datenschutz.html">Datenschutz</a></p>
+      <h4>📍 Standorte</h4>
+      <p>Düsseldorf – Erbacher Weg 17</p>
+      <p>Wuppertal – Haaner Straße 30</p>
+      <p><a href="https://wa.me/491782145052" target="_blank">💬 WhatsApp schreiben</a></p>
+      <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
     </div>
-
   </div>
 
   <div class="footer-bottom">
-    © 2026 Monteurzimmer Küthe
+    © 2026 Monteurzimmer Küthe – Düsseldorf & Wuppertal
   </div>
 </footer>
 
