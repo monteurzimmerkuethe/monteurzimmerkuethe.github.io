@@ -3,45 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <title>Monteurzimmer Küthe – Düsseldorf & Wuppertal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Monteurzimmer in Düsseldorf und Wuppertal. Saubere, günstige Unterkünfte für Monteure und Firmen. Jetzt anfragen!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moderne Monteurzimmer & Wohnungen ab 20€ pro Nacht – Düsseldorf & Wuppertal">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #333;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #222;
+      background: #f5f6f8;
     }
     header {
+      background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+      url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 120px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background: #1f3c88;
+      color: #fff;
+      padding: 14px 30px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 18px;
+      display: inline-block;
+    }
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #1f3c88;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card div {
+      padding: 20px;
+    }
+    footer {
       background: #1f3c88;
       color: #fff;
       padding: 40px 20px;
       text-align: center;
     }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-    }
-    h2 {
-      color: #1f3c88;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #1f3c88;
+    footer a {
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #777;
     }
   </style>
 </head>
@@ -49,36 +83,56 @@
 
 <header>
   <h1>Monteurzimmer Küthe</h1>
-  <p>Monteurunterkünfte in Düsseldorf & Wuppertal</p>
+  <p>Moderne Monteurunterkünfte in Düsseldorf & Wuppertal</p>
+  <a class="btn" href="tel:01782145052">Jetzt anrufen</a>
 </header>
 
 <section>
   <h2>Willkommen</h2>
   <p>
-    Wir bieten saubere, komfortable und preiswerte Monteurzimmer
-    für Handwerker, Monteure und Firmen in Düsseldorf und Wuppertal.
+    Wir bieten saubere, moderne und preiswerte Unterkünfte für
+    <strong>Monteure, Handwerker und Firmen</strong>.
+    Flexible Buchung – bereits <strong>ab 20 € pro Nacht</strong>.
   </p>
 </section>
 
 <section>
-  <h2>Standorte</h2>
-  <ul>
-    <li>Düsseldorf – verkehrsgünstig gelegen</li>
-    <li>Wuppertal – ruhig & zentral</li>
-  </ul>
+  <h2>Unsere Zimmer & Wohnungen</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80">
+      <div>
+        <h3>Einzelzimmer</h3>
+        <p>Ideal für Monteure – ruhig & komfortabel.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80">
+      <div>
+        <h3>Doppelzimmer</h3>
+        <p>Perfekt für Kollegen oder längere Aufenthalte.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1560067174-89487b7d6f6b?auto=format&fit=crop&w=800&q=80">
+      <div>
+        <h3>Wohnungen</h3>
+        <p>Komplett ausgestattet – wie im Hotel.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section>
   <h2>Kontakt</h2>
   <p>
-    📞 Telefon: <strong>HIER TELEFONNUMMER EINTRAGEN</strong><br>
-    📧 E-Mail: <strong>HIER EMAIL EINTRAGEN</strong>
+    📞 <strong>0178 2145052</strong> oder <strong>0172 2145052</strong><br>
+    ✉️ <a href="mailto:mietzimmerkuethe@web.de">mietzimmerkuethe@web.de</a>
   </p>
-  <a class="btn" href="mailto:HIER EMAIL EINTRAGEN">Jetzt anfragen</a>
 </section>
 
 <footer>
-  © 2026 Monteurzimmer Küthe
+  <p>© 2026 Monteurzimmer Küthe</p>
 </footer>
 
 </body>
