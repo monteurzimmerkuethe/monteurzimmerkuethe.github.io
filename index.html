@@ -5,96 +5,186 @@
   <title>Monteurzimmer Küthe – Düsseldorf & Wuppertal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #111827;
+    }
 
- <style>
-.footer {
-  background: #1e3a8a;
-  color: #ffffff;
-  padding: 50px 20px;
-}
+    /* HEADER */
+    header {
+      background: #1e3a8a;
+      padding: 15px 30px;
+    }
 
-.footer-content {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.footer h3 {
-  margin-bottom: 12px;
-  font-size: 1.2rem;
-}
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
 
-.footer p {
-  margin: 6px 0;
-  line-height: 1.6;
-}
+    /* HERO */
+    .hero {
+      position: relative;
+    }
 
-.footer a {
-  color: #e5e7eb;
-  text-decoration: none;
-}
+    .hero img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+    }
 
-.footer a:hover {
-  color: #93c5fd;
-  text-decoration: underline;
-}
+    .hero-text {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      background: rgba(0,0,0,0.55);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 90%;
+    }
 
-.footer-bottom {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #cbd5f5;
-}
+    /* CONTENT */
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
 
-/* WhatsApp Button */
-.whatsapp-btn {
-  display: inline-block;
-  margin-top: 10px;
-  background: #25D366;
-  color: #ffffff !important;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-weight: bold;
-}
+    h2 {
+      margin-bottom: 20px;
+    }
 
-/* 📱 Mobile */
-@media (max-width: 700px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-</style>
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 20px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #1e3a8a;
+      color: white;
+      padding: 50px 20px;
+      margin-top: 60px;
+    }
+
+    .footer-content {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .footer a {
+      color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #93c5fd;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #25D366;
+      color: white !important;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .footer-bottom {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #cbd5f5;
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+      .cards,
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-text {
+        left: 15px;
+        right: 15px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Monteurzimmer Küthe</h1>
   <nav>
-    <a href="index.html">Startseite</a>
-    <a href="duesseldorf.html">Düsseldorf</a>
-    <a href="wuppertal.html">Wuppertal</a>
+    <strong style="color:white;">Monteurzimmer Küthe</strong>
+    <div>
+      <a href="index.html">Startseite</a>
+      <a href="duesseldorf.html">Düsseldorf</a>
+      <a href="wuppertal.html">Wuppertal</a>
+    </div>
   </nav>
 </header>
 
-<section class="hero">
-  <div>
-    <h2>Monteurwohnungen in Düsseldorf & Wuppertal</h2>
-    <p>Modern · Voll ausgestattet · Kurz- & Langzeitmiete</p>
+<!-- HERO -->
+<div class="hero">
+  <img src="images/start-haus.jpg" alt="Monteurwohnungen">
+  <div class="hero-text">
+    <h1>Monteurwohnungen in Düsseldorf & Wuppertal</h1>
+    <p>Komfortabel · Ruhig · Voll ausgestattet</p>
   </div>
-</section>
+</div>
 
+<!-- CONTENT -->
 <div class="container">
   <h2>Unsere Unterkünfte</h2>
 
   <div class="cards">
     <div class="card">
-      <img src="images/duesseldorf/wohnung-1/haus-1.jpg" alt="Monteurwohnung Düsseldorf">
+      <img src="images/duesseldorf/wohnung-1/haus-1.jpg" alt="Düsseldorf">
       <div class="content">
         <h3>Düsseldorf</h3>
         <p>Moderne Monteurwohnungen in zentraler Lage.</p>
@@ -103,7 +193,7 @@
     </div>
 
     <div class="card">
-      <img src="images/wuppertal/haus-1.jpg" alt="Monteurwohnung Wuppertal">
+      <img src="images/wuppertal/haus-1.jpg" alt="Wuppertal">
       <div class="content">
         <h3>Wuppertal</h3>
         <p>Ruhige & voll ausgestattete Wohnungen.</p>
@@ -111,27 +201,12 @@
       </div>
     </div>
   </div>
-
-  <div class="contact">
-    <h2>Kontakt</h2>
-    <p><strong>Telefon:</strong> 0178 / 2145052 · 0172 / 2145052</p>
-    <p><strong>E-Mail:</strong> mietzimmerkuethe@web.de</p>
-
-    <p><strong>Düsseldorf:</strong> Erbacher Weg 17, 40227 Düsseldorf</p>
-    <p><strong>Wuppertal:</strong> Haaner Straße 30, 42329 Wuppertal</p>
-
-    <div class="maps">
-      <iframe src="https://www.google.com/maps?q=Erbacher+Weg+17,+40227+Düsseldorf&output=embed"></iframe>
-      <iframe src="https://www.google.com/maps?q=Haaner+Straße+30,+42329+Wuppertal&output=embed"></iframe>
-    </div>
-  </div>
 </div>
 
+<!-- FOOTER -->
 <footer class="footer">
-
   <div class="footer-content">
 
-    <!-- Links -->
     <div>
       <h3>🏠 Monteurzimmer Küthe</h3>
       <p>Düsseldorf & Wuppertal</p>
@@ -149,22 +224,19 @@
       </p>
     </div>
 
-    <!-- Rechts -->
     <div>
       <h3>📞 Kontakt</h3>
       <p>📞 <a href="tel:01782145052">0178 2145052</a></p>
       <p>📞 <a href="tel:01722145052">0172 2145052</a></p>
       <p>✉️ <a href="mailto:mietzimmerkuethe@web.de">mietzimmerkuethe@web.de</a></p>
 
-      <a class="whatsapp-btn" 
-         href="https://wa.me/491782145052" 
-         target="_blank">
+      <a class="whatsapp-btn" href="https://wa.me/491782145052" target="_blank">
         💬 WhatsApp schreiben
       </a>
 
       <h3 style="margin-top:20px;">⚖️ Rechtliches</h3>
-      <p><a href="impressum.html">📄 Impressum</a></p>
-      <p><a href="datenschutz.html">🔒 Datenschutz</a></p>
+      <p><a href="impressum.html">Impressum</a></p>
+      <p><a href="datenschutz.html">Datenschutz</a></p>
     </div>
 
   </div>
@@ -172,7 +244,6 @@
   <div class="footer-bottom">
     © 2026 Monteurzimmer Küthe
   </div>
-
 </footer>
 
 </body>
