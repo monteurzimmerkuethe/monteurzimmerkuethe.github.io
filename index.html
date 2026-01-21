@@ -1,23 +1,152 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>Monteurzimmer & Monteurwohnungen</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{margin:0;font-family:Arial,sans-serif;background:#f5f5f5}
-header{background:#1f3c88;color:#fff;padding:20px}
-nav a{color:#fff;margin-right:20px;text-decoration:none;font-weight:bold}
-.container{max-width:1100px;margin:auto;padding:40px}
-.city-box{background:#fff;padding:40px;margin:20px 0;border-radius:10px;text-align:center}
-.city-box a{display:inline-block;margin-top:20px;padding:15px 30px;background:#1f3c88;color:#fff;text-decoration:none;border-radius:6px}
-footer{background:#111;color:#aaa;text-align:center;padding:20px}
-</style>
+  <meta charset="UTF-8">
+  <title>Monteurzimmer & Monteurwohnungen | Wuppertal & Düsseldorf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Monteurzimmer & Monteurwohnungen in Wuppertal und Düsseldorf. Ab 20€ pro Person/Nacht. WLAN, Einzelbetten, Waschmaschine, kostenlose Parkplätze.">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: #1f3c88;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: #e9ecf3;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .locations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .location-box {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .location-box img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .location-box div {
+      padding: 20px;
+    }
+
+    .location-box h3 {
+      margin-top: 0;
+    }
+
+    .location-box a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #1f3c88;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .features {
+      background: #fff;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    .features ul {
+      max-width: 800px;
+      margin: auto;
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .features li {
+      background: #f0f2f8;
+      padding: 15px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .contact {
+      text-align: center;
+      margin: 60px 0;
+    }
+
+    .contact p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
+  <h1>Monteurzimmer Küthe</h1>
   <nav>
     <a href="index.html">Startseite</a>
     <a href="wuppertal.html">Wuppertal</a>
@@ -25,25 +154,78 @@ footer{background:#111;color:#aaa;text-align:center;padding:20px}
   </nav>
 </header>
 
+<section class="hero">
+  <h2>Monteurzimmer & Monteurwohnungen</h2>
+  <p>
+    Wuppertal & Düsseldorf – ab <strong>20 € pro Person / Nacht</strong><br>
+    Ideal für Monteure, Firmen & Handwerker
+  </p>
+</section>
+
 <div class="container">
-  <h1>Monteurzimmer & Monteurwohnungen</h1>
-  <p>Moderne, voll ausgestattete Unterkünfte für Monteure und Firmen.</p>
 
-  <div class="city-box">
-    <h2>📍 Wuppertal</h2>
-    <p>Direkt an der A46 – schnell in Düsseldorf & Essen</p>
-    <a href="wuppertal.html">Zu Wuppertal</a>
+  <p>
+    Wir bieten moderne, voll ausgestattete Monteurwohnungen in Wuppertal und Düsseldorf.
+    Alle Unterkünfte verfügen über Einzelbetten, WLAN, Waschmaschine sowie kostenlose Parkplätze
+    direkt vor dem Haus. Dank der Nähe zur Autobahn sind Düsseldorf, Essen und das Bergische Land
+    schnell erreichbar.
+  </p>
+
+  <div class="locations">
+
+    <!-- WUPPERTAL -->
+    <div class="location-box">
+      <img src="images/wuppertal/haus/haus-1.jpg" alt="Monteurwohnung Wuppertal">
+      <div>
+        <h3>Wuppertal – Vohwinkel</h3>
+        <p>
+          Haaner Straße 30<br>
+          Nähe A46 – schnelle Verbindung nach Düsseldorf & Essen<br>
+          2 Wohnungen, bis zu 8 Personen
+        </p>
+        <a href="wuppertal.html">Mehr zu Wuppertal</a>
+      </div>
+    </div>
+
+    <!-- DÜSSELDORF -->
+    <div class="location-box">
+      <img src="images/duesseldorf/haus/haus-1.jpg" alt="Monteurwohnung Düsseldorf">
+      <div>
+        <h3>Düsseldorf</h3>
+        <p>
+          Zentrale Lage<br>
+          Ideal für Monteure & Handwerker<br>
+          Gute Autobahnanbindung
+        </p>
+        <a href="duesseldorf.html">Mehr zu Düsseldorf</a>
+      </div>
+    </div>
+
   </div>
 
-  <div class="city-box">
-    <h2>📍 Düsseldorf</h2>
-    <p>Zentrale Lage – ideal für Monteure & Handwerker</p>
-    <a href="duesseldorf.html">Zu Düsseldorf</a>
-  </div>
+</div>
+
+<section class="features">
+  <ul>
+    <li>✔ Einzelbetten in allen Zimmern</li>
+    <li>✔ WLAN inklusive</li>
+    <li>✔ Waschmaschine in jeder Wohnung</li>
+    <li>✔ Kostenlose Parkplätze vor dem Haus</li>
+    <li>✔ Voll ausgestattete Küche & Bad</li>
+    <li>✔ Ideal für Firmen & Langzeitaufenthalte</li>
+  </ul>
+</section>
+
+<div class="contact">
+  <h2>Kontakt & Buchung</h2>
+  <p>📞 0178 2145052</p>
+  <p>📞 0172 2145052</p>
+  <p>📧 mietzimmerkuethe@web.de</p>
+  <p>WhatsApp & Anruf möglich</p>
 </div>
 
 <footer>
-© Monteurzimmer Küthe
+  © Monteurzimmer Küthe – Wuppertal & Düsseldorf
 </footer>
 
 </body>
