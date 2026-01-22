@@ -1,313 +1,361 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Monteurzimmer Düsseldorf & Wuppertal | ab 20 € | Küthe</title>
+<title>Monteurzimmer Düsseldorf & Wuppertal | ab 20 € | Küthe</title>
 
-  <meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal. Einzelbetten, WLAN, kostenlose Parkplätze & Nähe A46. Ideal für Monteure, Handwerker & Firmen. Ab 20 € pro Person/Nacht.">
-  <meta name="robots" content="index, follow">
+<meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal ab 20 € pro Person/Nacht. Einzelbetten, WLAN, kostenlose Parkplätze, Nähe A46. Direkt vom Vermieter – ideal für Monteure, Handwerker & Firmen.">
+<meta name="robots" content="index, follow">
 
-  <!-- Favicons -->
-  <link rel="icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f4f4f4;
+color:#222;
+line-height:1.6;
+}
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f4f4f4;
-      color: #222;
-      line-height: 1.6;
-    }
+/* HEADER */
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:#1f2933;
+padding:14px 20px;
+}
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: #1f2933;
-      padding: 14px 25px;
-    }
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
+nav a{
+color:#fff;
+text-decoration:none;
+font-weight:500;
+}
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-    }
+nav a:hover{color:#d6b77b;}
 
-    nav a:hover {
-      color: #d6b77b;
-    }
+/* HERO */
+.hero{
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("images/start-haus.jpg") center/cover no-repeat;
+color:#fff;
+text-align:center;
+padding:95px 20px;
+}
 
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-      url("images/start-haus.jpg") center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 95px 20px;
-    }
+.hero h1{
+font-size:2.4rem;
+margin-bottom:10px;
+}
 
-    .hero h1 {
-      font-size: 2.4rem;
-      margin-bottom: 10px;
-    }
+.hero p{
+font-size:1.1rem;
+max-width:900px;
+margin:auto;
+}
 
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 900px;
-      margin: auto;
-    }
+/* CONTENT */
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 20px;
-    }
+h2{text-align:center;margin-bottom:30px;}
 
-    h2 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+/* CARDS */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-bottom:60px;
+}
 
-    /* CARDS */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-      margin-bottom: 60px;
-    }
+.card{
+background:#fff;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
 
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
 
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
+.card .content{padding:20px;}
 
-    .card .content {
-      padding: 20px;
-    }
+.card a{
+display:inline-block;
+margin-top:10px;
+font-weight:600;
+color:#1f2933;
+text-decoration:none;
+}
 
-    .card a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #1f2933;
-      font-weight: 600;
-      text-decoration: none;
-    }
+/* SEO TEXT */
+.seo-text{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
 
-    .card a:hover {
-      color: #d6b77b;
-    }
+/* REVIEWS */
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:30px;
+}
 
-    /* FORM */
-    .form-box {
-      background: #fff;
-      max-width: 700px;
-      margin: 60px auto;
-      padding: 40px;
-      border-radius: 14px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-    }
+.review{
+background:#fff;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
 
-    .form-box h2 {
-      margin-top: 0;
-    }
+.review .stars{color:#d6b77b;font-size:1.2rem;}
 
-    .form-group {
-      margin-bottom: 18px;
-    }
+/* MAPS */
+.maps{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+margin-top:40px;
+}
 
-    .form-group label {
-      display: block;
-      font-weight: 500;
-      margin-bottom: 6px;
-    }
+.maps iframe{
+width:100%;
+height:300px;
+border:0;
+border-radius:12px;
+filter:grayscale(100%);
+}
 
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-      width: 100%;
-      padding: 12px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-family: 'Poppins', sans-serif;
-    }
+/* FORM */
+.form-section{
+background:#fff;
+max-width:900px;
+margin:80px auto;
+padding:45px;
+border-radius:14px;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
 
-    .form-group textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
+.form-section h2{text-align:center;margin-bottom:10px;}
+.form-section p{text-align:center;color:#555;margin-bottom:30px;}
 
-    .form-box button {
-      background: #1f2933;
-      color: #fff;
-      border: none;
-      padding: 14px 28px;
-      border-radius: 30px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-    }
+.form-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-bottom:20px;
+}
 
-    .form-box button:hover {
-      background: #111827;
-    }
+.form-section input,
+.form-section select,
+.form-section textarea{
+width:100%;
+padding:14px;
+border-radius:8px;
+border:1px solid #ccc;
+font-family:'Poppins',sans-serif;
+}
 
-    footer {
-      background: #1f2933;
-      color: #eee;
-      padding: 45px 20px;
-      margin-top: 70px;
-    }
+.form-section textarea{min-height:120px;resize:vertical;}
 
-    .footer-grid {
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 30px;
-    }
+.form-section button{
+width:100%;
+padding:16px;
+border:none;
+border-radius:30px;
+background:#1f2933;
+color:#fff;
+font-size:1rem;
+font-weight:600;
+cursor:pointer;
+}
 
-    footer a {
-      color: #d6b77b;
-      text-decoration: none;
-    }
+.form-section button:hover{background:#111827;}
 
-    .footer-bottom {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 0.85rem;
-      opacity: 0.8;
-    }
+/* FOOTER */
+footer{
+background:#1f2933;
+color:#eee;
+padding:45px 20px;
+}
 
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: #fff;
-      border-radius: 50px;
-      padding: 14px 22px;
-      font-weight: 600;
-      text-decoration: none;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    }
-  </style>
+.footer-grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+}
+
+footer a{color:#d6b77b;text-decoration:none;}
+
+.footer-bottom{
+text-align:center;
+margin-top:30px;
+font-size:.85rem;
+opacity:.8;
+}
+
+/* WHATSAPP */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:14px 22px;
+border-radius:50px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 8px 25px rgba(0,0,0,.3);
+z-index:9999;
+}
+
+@media(max-width:768px){
+.maps{grid-template-columns:1fr;}
+.form-row{grid-template-columns:1fr;}
+.hero h1{font-size:1.7rem;}
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <nav>
-    <a href="index.html">Startseite</a>
-    <a href="duesseldorf.html">Düsseldorf</a>
-    <a href="wuppertal.html">Wuppertal</a>
-  </nav>
+<nav>
+<a href="index.html">Startseite</a>
+<a href="duesseldorf.html">Düsseldorf</a>
+<a href="wuppertal.html">Wuppertal</a>
+</nav>
 </header>
 
 <section class="hero">
-  <h1>Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal</h1>
-  <p>Ab 20 € pro Nacht · Einzelbetten · Direkt vom Vermieter</p>
+<h1>Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal</h1>
+<p>Ab 20 € pro Nacht · Einzelbetten · Direkt vom Vermieter</p>
 </section>
 
 <div class="container">
-  <h2>Unsere Standorte</h2>
+<h2>Unsere Standorte</h2>
 
-  <div class="cards">
-    <div class="card">
-      <img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-1.jpg" alt="Monteurzimmer Düsseldorf">
-      <div class="content">
-        <h3>Düsseldorf</h3>
-        <p>Erbacher Weg 17 · Nähe A46</p>
-        <a href="duesseldorf.html">Mehr erfahren →</a>
-      </div>
-    </div>
+<div class="cards">
+<div class="card">
+<img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-1.jpg" alt="Monteurzimmer Düsseldorf">
+<div class="content">
+<h3>Düsseldorf</h3>
+<p>Erbacher Weg 17 · Nähe A46</p>
+<a href="duesseldorf.html">Mehr erfahren →</a>
+</div>
+</div>
 
-    <div class="card">
-      <img src="images/wuppertal/haus-1.jpg" alt="Monteurzimmer Wuppertal">
-      <div class="content">
-        <h3>Wuppertal</h3>
-        <p>Haaner Straße 30 · Ruhige Lage</p>
-        <a href="wuppertal.html">Mehr erfahren →</a>
-      </div>
-    </div>
-  </div>
+<div class="card">
+<img src="images/wuppertal/haus-1.jpg" alt="Monteurzimmer Wuppertal">
+<div class="content">
+<h3>Wuppertal</h3>
+<p>Haaner Straße 30 · Ruhige Lage</p>
+<a href="wuppertal.html">Mehr erfahren →</a>
+</div>
+</div>
+</div>
+
+<div class="seo-text">
+<h2>Monteurunterkünfte für Firmen & Handwerker</h2>
+<p>
+Unsere Monteurzimmer und Monteurwohnungen in Düsseldorf und Wuppertal sind ideal
+für Monteure, Handwerker, Firmen und Subunternehmer. Die Unterkünfte bieten
+Einzelbetten, WLAN, Waschmaschinen und kostenlose Parkplätze.
+Durch die Nähe zur A46 sind Einsätze in Essen, Solingen, Haan, Mettmann, Neuss,
+Ratingen, Dormagen, Remscheid und im gesamten Bergischen Land schnell erreichbar.
+</p>
+</div>
+
+<h2>Standorte auf Google Maps</h2>
+<div class="maps">
+<iframe src="https://www.google.com/maps?q=Erbacher+Weg+17,+40227+Düsseldorf&output=embed"></iframe>
+<iframe src="https://www.google.com/maps?q=Haaner+Straße+30,+42329+Wuppertal&output=embed"></iframe>
+</div>
+
+<h2>Was unsere Gäste sagen</h2>
+<div class="reviews">
+<div class="review"><div class="stars">★★★★★</div>Sehr sauber, Parkplatz direkt vor dem Haus.<br><small>Firma aus Düsseldorf</small></div>
+<div class="review"><div class="stars">★★★★★</div>Ruhige Lage, ideal für längere Aufenthalte.<br><small>Handwerksbetrieb Essen</small></div>
+<div class="review"><div class="stars">★★★★★</div>Direkter Vermieter, schnelle Rückmeldung.<br><small>Subunternehmer Bergisches Land</small></div>
+</div>
 </div>
 
 <!-- ANFRAGE -->
-<div class="form-box">
-  <h2>Unverbindliche Anfrage</h2>
-  <form action="mailto:mietzimmerkuethe@web.de" method="post" enctype="text/plain">
-    <div class="form-group">
-      <label>Standort</label>
-      <select name="Standort">
-        <option>Düsseldorf</option>
-        <option>Wuppertal</option>
-      </select>
-    </div>
+<div class="form-section">
+<h2>Unverbindliche Anfrage</h2>
+<p>Direkt vom Vermieter · Antwort kurzfristig</p>
 
-    <div class="form-group">
-      <label>Name / Firma</label>
-      <input type="text" name="Name" required>
-    </div>
+<form action="mailto:mietzimmerkuethe@web.de" method="post" enctype="text/plain">
+<div class="form-row">
+<input type="text" name="Firma" placeholder="Firma / Ansprechpartner *" required>
+<input type="tel" name="Telefon" placeholder="Telefon *" required>
+</div>
 
-    <div class="form-group">
-      <label>Telefon</label>
-      <input type="tel" name="Telefon">
-    </div>
+<div class="form-row">
+<input type="email" name="Email" placeholder="E-Mail *" required>
+<select name="Standort" required>
+<option value="">Standort auswählen *</option>
+<option>Düsseldorf</option>
+<option>Wuppertal</option>
+</select>
+</div>
 
-    <div class="form-group">
-      <label>E-Mail</label>
-      <input type="email" name="Email" required>
-    </div>
+<div class="form-row">
+<input type="date" name="Anreise" required>
+<input type="date" name="Abreise" required>
+</div>
 
-    <div class="form-group">
-      <label>Nachricht</label>
-      <textarea name="Nachricht"></textarea>
-    </div>
+<textarea name="Nachricht" placeholder="Ihre Anfrage / Besonderheiten (optional)"></textarea>
 
-    <button type="submit">Anfrage senden</button>
-  </form>
+<button type="submit">Anfrage senden</button>
+</form>
+
+<p style="text-align:center;margin-top:15px;">
+oder <a href="https://wa.me/491782145052">per WhatsApp anfragen</a>
+</p>
 </div>
 
 <footer>
-  <div class="footer-grid">
-    <div>
-      📞 0178 2145052 · 0172 2145052<br>
-      ✉️ mietzimmerkuethe@web.de
-    </div>
-    <div>
-      Düsseldorf & Wuppertal<br>
-      <a href="impressum.html">Impressum</a> ·
-      <a href="datenschutz.html">Datenschutz</a>
-    </div>
-  </div>
+<div class="footer-grid">
+<div>
+📞 0178 2145052 · 0172 2145052<br>
+✉️ mietzimmerkuethe@web.de
+</div>
+<div>
+Düsseldorf & Wuppertal<br>
+<a href="impressum.html">Impressum</a> ·
+<a href="datenschutz.html">Datenschutz</a>
+</div>
+</div>
 
-  <div class="footer-bottom">
-    © 2026 Monteurzimmer Küthe
-  </div>
+<div class="footer-bottom">
+© 2026 Monteurzimmer Küthe
+</div>
 </footer>
 
 <a class="whatsapp-float" href="https://wa.me/491782145052" target="_blank">
-  💬 WhatsApp
+💬 WhatsApp
 </a>
 
 </body>
