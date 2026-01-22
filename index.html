@@ -2,18 +2,21 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <title>Monteurzimmer & Monteurwohnungen Düsseldorf & Wuppertal | ab 20 €</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal. Einzelbetten, WLAN, kostenlose Parkplätze, Nähe A46. Ideal für Monteure, Handwerker & Firmen. Ab 20 € pro Person & Nacht.">
-  <meta name="keywords" content="Monteurzimmer Düsseldorf, Monteurwohnung Düsseldorf, Monteurzimmer Wuppertal, Monteurwohnung Wuppertal, Monteurunterkunft A46">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Font -->
+  <title>Monteurzimmer Düsseldorf & Wuppertal | ab 20 € | Küthe</title>
+
+  <meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal. Einzelbetten, WLAN, kostenlose Parkplätze & Nähe A46. Ideal für Monteure, Handwerker & Firmen. Ab 20 € pro Person/Nacht.">
+
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -25,12 +28,11 @@
       line-height: 1.6;
     }
 
-    /* STICKY HEADER */
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: #1e1e1e;
+      background: #1f2933;
       padding: 14px 25px;
     }
 
@@ -38,6 +40,7 @@
       display: flex;
       justify-content: center;
       gap: 30px;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -50,13 +53,12 @@
       color: #d6b77b;
     }
 
-    /* HERO */
     .hero {
       background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
       url("images/start-haus.jpg") center/cover no-repeat;
       color: #fff;
       text-align: center;
-      padding: 90px 20px;
+      padding: 95px 20px;
     }
 
     .hero h1 {
@@ -70,7 +72,6 @@
       margin: auto;
     }
 
-    /* CONTENT */
     .container {
       max-width: 1100px;
       margin: auto;
@@ -82,7 +83,6 @@
       margin-bottom: 30px;
     }
 
-    /* CARDS */
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -110,7 +110,7 @@
     .card a {
       display: inline-block;
       margin-top: 10px;
-      color: #1e1e1e;
+      color: #1f2933;
       font-weight: 600;
       text-decoration: none;
     }
@@ -119,13 +119,27 @@
       color: #d6b77b;
     }
 
-    /* SEO TEXT */
     .seo-text {
       max-width: 900px;
       margin: auto;
+      text-align: center;
     }
 
-    /* REVIEWS */
+    .cta {
+      background: #1f2933;
+      color: #fff;
+      padding: 40px 20px;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .cta a {
+      color: #d6b77b;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
     .reviews {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -146,13 +160,6 @@
       margin-bottom: 10px;
     }
 
-    .review span {
-      font-size: 0.85rem;
-      color: #555;
-      font-style: italic;
-    }
-
-    /* MAPS */
     .maps {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -168,19 +175,18 @@
       filter: grayscale(100%);
     }
 
-    /* FOOTER */
     footer {
-      background: #1e1e1e;
+      background: #1f2933;
       color: #eee;
       padding: 45px 20px;
-      margin-top: 60px;
+      margin-top: 70px;
     }
 
     .footer-grid {
       max-width: 1100px;
       margin: auto;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 30px;
     }
 
@@ -196,7 +202,6 @@
       opacity: 0.8;
     }
 
-    /* WHATSAPP */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -215,10 +220,8 @@
     }
 
     @media (max-width: 768px) {
-      .footer-grid,
       .maps {
         grid-template-columns: 1fr;
-        text-align: center;
       }
 
       .hero h1 {
@@ -243,8 +246,8 @@
 </header>
 
 <section class="hero">
-  <h1>Monteurzimmer & Monteurwohnungen</h1>
-  <p>Düsseldorf & Wuppertal · Ab 20 € · Direkt vom Vermieter</p>
+  <h1>Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal</h1>
+  <p>Ab 20 € pro Nacht · Einzelbetten · Direkt vom Vermieter</p>
 </section>
 
 <div class="container">
@@ -252,7 +255,7 @@
 
   <div class="cards">
     <div class="card">
-      <img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-1.jpg">
+      <img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-1.jpg" alt="Monteurzimmer Düsseldorf">
       <div class="content">
         <h3>Düsseldorf</h3>
         <p>Erbacher Weg 17 · Nähe A46</p>
@@ -261,7 +264,7 @@
     </div>
 
     <div class="card">
-      <img src="images/wuppertal/haus-1.jpg">
+      <img src="images/wuppertal/haus-1.jpg" alt="Monteurzimmer Wuppertal">
       <div class="content">
         <h3>Wuppertal</h3>
         <p>Haaner Straße 30 · Ruhige Lage</p>
@@ -273,55 +276,43 @@
   <div class="seo-text">
     <h2>Monteurunterkünfte für Firmen & Handwerker</h2>
     <p>
-      Unsere Monteurzimmer und Monteurwohnungen in Düsseldorf und Wuppertal
-      eignen sich ideal für längere Aufenthalte ab 7 Tagen bis mehrere Monate.
-      Einzelbetten, WLAN, Waschmaschine und kostenlose Parkplätze gehören zur Ausstattung.
-      Die Nähe zur A46 ermöglicht schnelle Einsätze in Essen, Solingen, Haan,
-      Mettmann, Remscheid, Ratingen, Dormagen und im gesamten Bergischen Land.
+      Unsere Monteurzimmer und Monteurwohnungen sind optimal für Monteure,
+      Handwerker, Firmen und Subunternehmer geeignet. Die Unterkünfte bieten
+      Einzelbetten, WLAN, Waschmaschine und kostenlose Parkplätze.
+      Dank der Nähe zur A46 sind Einsätze in Düsseldorf, Wuppertal, Essen,
+      Solingen, Haan, Mettmann, Neuss, Ratingen, Dormagen und im gesamten
+      Bergischen Land schnell erreichbar.
     </p>
   </div>
 
-  <h2>Standorte auf Google Maps</h2>
+  <div class="cta">
+    <h2>Jetzt unverbindlich anfragen</h2>
+    <p>
+      📞 <a href="tel:01782145052">0178 2145052</a> ·
+      <a href="tel:01722145052">0172 2145052</a><br>
+      💬 <a href="https://wa.me/491782145052">WhatsApp schreiben</a><br>
+      ✉️ <a href="mailto:mietzimmerkuethe@web.de">mietzimmerkuethe@web.de</a>
+    </p>
+    <p><strong>Direkt vom Vermieter – keine Vermittlungsplattform</strong></p>
+  </div>
+
+  <h2>Unsere Standorte auf Google Maps</h2>
   <div class="maps">
     <iframe src="https://www.google.com/maps?q=Erbacher+Weg+17,+40227+Düsseldorf&output=embed"></iframe>
     <iframe src="https://www.google.com/maps?q=Haaner+Straße+30,+42329+Wuppertal&output=embed"></iframe>
   </div>
 </div>
 
-<div class="container">
-  <h2>Was unsere Gäste sagen</h2>
-
-  <div class="reviews">
-    <div class="review">
-      <div class="stars">★★★★★</div>
-      Sehr saubere Unterkunft, Parkplatz direkt vor dem Haus,
-      schnelle Anbindung an die Autobahn.
-      <span>– Firma aus Düsseldorf</span>
-    </div>
-
-    <div class="review">
-      <div class="stars">★★★★★</div>
-      Ruhige Lage, WLAN stabil, ideal für längere Aufenthalte.
-      <span>– Handwerksbetrieb aus Essen</span>
-    </div>
-
-    <div class="review">
-      <div class="stars">★★★★★</div>
-      Freundlicher Vermieter, flexible Buchung, sehr gutes Preis-Leistungs-Verhältnis.
-      <span>– Subunternehmer Bergisches Land</span>
-    </div>
-  </div>
-</div>
-
 <footer>
   <div class="footer-grid">
     <div>
-      <p>📞 0178 2145052 · 0172 2145052</p>
-      <p>✉️ mietzimmerkuethe@web.de</p>
+      📞 0178 2145052 · 0172 2145052<br>
+      ✉️ mietzimmerkuethe@web.de
     </div>
     <div>
-      <p>Düsseldorf & Wuppertal</p>
-      <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+      Düsseldorf & Wuppertal<br>
+      <a href="impressum.html">Impressum</a> ·
+      <a href="datenschutz.html">Datenschutz</a>
     </div>
   </div>
 
