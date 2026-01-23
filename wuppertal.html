@@ -30,6 +30,7 @@ color:#222;
 line-height:1.6;
 }
 
+/* HEADER */
 header{
 background:#1f2933;
 padding:15px 20px;
@@ -50,6 +51,7 @@ font-weight:500;
 
 nav a:hover{color:#d6b77b;}
 
+/* CONTENT */
 .container{
 max-width:1100px;
 margin:auto;
@@ -62,30 +64,60 @@ h1{text-align:center;margin-bottom:5px;}
 text-align:center;
 font-size:.95rem;
 color:#555;
-margin-bottom:15px;
+margin-bottom:10px;
 }
 
 .intro{
 text-align:center;
 max-width:900px;
-margin:0 auto 40px;
+margin:0 auto 30px;
 color:#444;
 }
 
-.gallery{
+/* MAPS + REVIEWS */
+.maps-reviews{
 display:grid;
-grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
-gap:15px;
-margin-top:15px;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin:40px 0;
 }
 
-.gallery img{
+.maps-reviews iframe{
 width:100%;
-border-radius:8px;
-box-shadow:0 4px 12px rgba(0,0,0,.1);
-object-fit:cover;
+height:280px;
+border:0;
+border-radius:12px;
+filter:grayscale(100%);
 }
 
+.review-box{
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,.1);
+display:flex;
+flex-direction:column;
+justify-content:center;
+text-align:center;
+}
+
+.review-box .stars{
+color:#d6b77b;
+font-size:1.4rem;
+margin-bottom:10px;
+}
+
+.review-box a{
+margin-top:15px;
+display:inline-block;
+font-weight:600;
+color:#1f2933;
+text-decoration:none;
+}
+
+.review-box a:hover{color:#000;}
+
+/* FEATURES */
 .features{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -100,6 +132,7 @@ border-radius:10px;
 box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
+/* HEADINGS */
 h2{
 margin-top:60px;
 border-left:5px solid #1f2933;
@@ -108,18 +141,22 @@ padding-left:12px;
 
 h3{margin-top:30px;}
 
-.maps{
-margin-top:40px;
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+gap:15px;
+margin-top:15px;
 }
 
-.maps iframe{
+.gallery img{
 width:100%;
-height:320px;
-border:0;
-border-radius:12px;
-filter:grayscale(100%);
+border-radius:8px;
+box-shadow:0 4px 12px rgba(0,0,0,.1);
+object-fit:cover;
 }
 
+/* FOOTER */
 footer{
 background:#1f2933;
 color:#fff;
@@ -144,6 +181,7 @@ font-size:.85rem;
 opacity:.85;
 }
 
+/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -156,6 +194,11 @@ font-size:22px;
 text-decoration:none;
 box-shadow:0 4px 12px rgba(0,0,0,.3);
 z-index:9999;
+}
+
+@media(max-width:768px){
+.maps-reviews{grid-template-columns:1fr;}
+.features{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -178,14 +221,30 @@ z-index:9999;
 </div>
 
 <p class="intro">
-Unsere Monteurwohnungen in Wuppertal bieten saubere, voll ausgestattete und
-preiswerte Unterkünfte für Monteure, Handwerker, Firmen und Subunternehmer.
-Ideal für Aufenthalte ab einer Woche bis zu mehreren Monaten – direkt vom Vermieter.
+Unsere Monteurwohnungen in Wuppertal bieten komfortable, saubere und voll ausgestattete
+Unterkünfte für Monteure, Handwerker, Firmen und Subunternehmer.
+Die Lage nahe der A46 ermöglicht schnelle Einsätze im Bergischen Land,
+in Düsseldorf, Essen, Solingen, Haan und dem Ruhrgebiet.
 </p>
 
-<div class="gallery">
-<img src="images/wuppertal/haus-1.jpg" alt="Hausansicht Monteurzimmer Wuppertal">
-<img src="images/wuppertal/haus-2.jpg" alt="Außenansicht Monteurwohnung Wuppertal">
+<!-- GOOGLE MAPS + BEWERTUNGEN -->
+<div class="maps-reviews">
+
+<iframe src="https://www.google.com/maps?q=Haaner+Straße+30,+42329+Wuppertal&output=embed"></iframe>
+
+<div class="review-box">
+<div class="stars">★★★★★</div>
+<strong>Sehr gut bewertet auf Google</strong>
+<p>Unsere Monteurunterkunft in Wuppertal wird für Sauberkeit,
+Ausstattung und direkte Vermietung geschätzt.</p>
+
+<a href="https://share.google/Ce6kvInGcIN6vvdQZ"
+   target="_blank"
+   onclick="gtag('event','google_review_click',{event_category:'Vertrauen'});">
+👉 Bewertungen auf Google ansehen
+</a>
+</div>
+
 </div>
 
 <div class="features">
@@ -193,24 +252,9 @@ Ideal für Aufenthalte ab einer Woche bis zu mehreren Monaten – direkt vom Ver
 <div class="feature">📶 Kostenloses WLAN & TV</div>
 <div class="feature">🍳 Voll ausgestattete Küche</div>
 <div class="feature">🧺 Waschmaschine in jeder Wohnung</div>
-<div class="feature">🅿️ Kostenlose Parkplätze vor dem Haus</div>
-<div class="feature">🚗 Nähe A46 – Düsseldorf & Ruhrgebiet schnell erreichbar</div>
+<div class="feature">🅿️ Kostenlose Parkplätze</div>
+<div class="feature">🚗 Nähe A46 – schnelle Anbindung</div>
 </div>
-
-<h2>Standort auf Google Maps</h2>
-<div class="maps">
-<iframe src="https://www.google.com/maps?q=Haaner+Straße+30,+42329+Wuppertal&output=embed"></iframe>
-</div>
-
-<h2>Bewertungen für Monteurzimmer Küthe – Wuppertal</h2>
-<p>
-⭐ ⭐ ⭐ ⭐ ⭐  
-<a href="https://share.google/Ce6kvInGcIN6vvdQZ"
-   target="_blank"
-   onclick="gtag('event','google_reviews_click',{event_category:'Bewertungen'});">
-Google-Bewertungen ansehen
-</a>
-</p>
 
 <h2>Monteurwohnung 1 – bis 8 Personen</h2>
 <h3>Schlafzimmer</h3>
@@ -266,6 +310,7 @@ Google-Bewertungen ansehen
 
 <footer>
 <div class="footer-grid">
+
 <div>
 <strong>📍 Monteurzimmer Küthe – Wuppertal</strong><br>
 Haaner Straße 30<br>
@@ -275,13 +320,16 @@ Haaner Straße 30<br>
 <div>
 <a href="tel:01782145052" onclick="gtag('event','phone_click',{event_category:'Kontakt'});">📞 0178 2145052</a><br>
 <a href="mailto:mietzimmerkuethe@web.de" onclick="gtag('event','email_click',{event_category:'Kontakt'});">✉️ mietzimmerkuethe@web.de</a><br>
-<a href="https://wa.me/491782145052" onclick="gtag('event','whatsapp_click',{event_category:'Kontakt'});" target="_blank">💬 WhatsApp schreiben</a>
+<a href="https://wa.me/491782145052"
+   onclick="gtag('event','whatsapp_click',{event_category:'Kontakt'});"
+   target="_blank">💬 WhatsApp schreiben</a>
 </div>
 
 <div>
 <a href="impressum.html">Impressum</a><br>
 <a href="datenschutz.html">Datenschutz</a>
 </div>
+
 </div>
 
 <div class="footer-bottom">
