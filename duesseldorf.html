@@ -64,15 +64,58 @@ h1{text-align:center;margin-bottom:5px;}
 text-align:center;
 font-size:.95rem;
 color:#555;
-margin-bottom:15px;
+margin-bottom:10px;
 }
 
 .intro{
 text-align:center;
 max-width:900px;
-margin:0 auto 40px;
+margin:0 auto 30px;
 color:#444;
 }
+
+/* MAPS + REVIEWS */
+.maps-reviews{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin:40px 0;
+}
+
+.maps-reviews iframe{
+width:100%;
+height:280px;
+border:0;
+border-radius:12px;
+filter:grayscale(100%);
+}
+
+.review-box{
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,.1);
+display:flex;
+flex-direction:column;
+justify-content:center;
+text-align:center;
+}
+
+.review-box .stars{
+color:#d6b77b;
+font-size:1.4rem;
+margin-bottom:10px;
+}
+
+.review-box a{
+margin-top:15px;
+display:inline-block;
+font-weight:600;
+color:#1f2933;
+text-decoration:none;
+}
+
+.review-box a:hover{color:#000;}
 
 /* FEATURES */
 .features{
@@ -154,6 +197,7 @@ z-index:9999;
 }
 
 @media(max-width:768px){
+.maps-reviews{grid-template-columns:1fr;}
 .features{grid-template-columns:1fr;}
 }
 </style>
@@ -182,6 +226,26 @@ Unterkünfte für Monteure, Handwerker, Firmen und Subunternehmer.
 Die zentrale Lage nahe der A46 ermöglicht schnelle Einsätze in Düsseldorf,
 Neuss, Ratingen, Hilden, Dormagen und dem gesamten Ruhrgebiet.
 </p>
+
+<!-- GOOGLE MAPS + BEWERTUNGEN -->
+<div class="maps-reviews">
+
+<iframe src="https://www.google.com/maps?q=Erbacher+Weg+17,+40227+Düsseldorf&output=embed"></iframe>
+
+<div class="review-box">
+<div class="stars">★★★★★</div>
+<strong>Sehr gut bewertet auf Google</strong>
+<p>Unsere Monteurunterkunft in Düsseldorf wird von Firmen & Monteuren
+für Sauberkeit, Lage und direkte Vermietung geschätzt.</p>
+
+<a href="https://share.google/mFv7ltKjnPHNrTyO4"
+   target="_blank"
+   onclick="gtag('event','google_review_click',{event_category:'Vertrauen'});">
+👉 Bewertungen auf Google ansehen
+</a>
+</div>
+
+</div>
 
 <div class="features">
 <div class="feature">🛏 Einzelbetten in allen Zimmern</div>
@@ -234,7 +298,9 @@ Erbacher Weg 17<br>
 <a href="tel:01782145052" onclick="gtag('event','phone_click',{event_category:'Kontakt'});">📞 0178 2145052</a><br>
 <a href="tel:01722145052" onclick="gtag('event','phone_click',{event_category:'Kontakt'});">📞 0172 2145052</a><br>
 <a href="mailto:mietzimmerkuethe@web.de" onclick="gtag('event','email_click',{event_category:'Kontakt'});">✉️ mietzimmerkuethe@web.de</a><br>
-<a href="https://wa.me/491782145052" onclick="gtag('event','whatsapp_click',{event_category:'Kontakt'});" target="_blank">💬 WhatsApp schreiben</a>
+<a href="https://wa.me/491782145052"
+   onclick="gtag('event','whatsapp_click',{event_category:'Kontakt'});"
+   target="_blank">💬 WhatsApp schreiben</a>
 </div>
 
 <div>
