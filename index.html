@@ -21,30 +21,6 @@ gtag('js', new Date());
 gtag('config', 'G-5X6BNHSGDJ', { anonymize_ip: true });
 </script>
 
-<!-- SEO Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LodgingBusiness",
-  "name": "Monteurzimmer Küthe",
-  "priceRange": "ab 20 € pro Person / Nacht",
-  "telephone": "+491782145052",
-  "email": "mietzimmerkuethe@web.de",
-  "areaServed": [
-    "Düsseldorf",
-    "Wuppertal",
-    "Essen",
-    "Solingen",
-    "Haan",
-    "Mettmann",
-    "Neuss",
-    "Ratingen",
-    "Dormagen",
-    "Remscheid"
-  ]
-}
-</script>
-
 <style>
 body{
 margin:0;
@@ -87,16 +63,8 @@ text-align:center;
 padding:95px 20px;
 }
 
-.hero h1{
-font-size:2.4rem;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:1.1rem;
-max-width:900px;
-margin:auto;
-}
+.hero h1{font-size:2.4rem;margin-bottom:10px;}
+.hero p{font-size:1.1rem;}
 
 /* CONTENT */
 .container{
@@ -136,6 +104,23 @@ margin-top:10px;
 font-weight:600;
 color:#1f2933;
 text-decoration:none;
+}
+
+/* BUTTONS */
+.btn{
+display:inline-block;
+margin-top:10px;
+padding:10px 18px;
+border-radius:30px;
+background:#1f2933;
+color:#fff;
+text-decoration:none;
+font-size:.9rem;
+}
+
+.btn.secondary{
+background:#d6b77b;
+color:#1f2933;
 }
 
 /* SEO TEXT */
@@ -188,9 +173,6 @@ border-radius:14px;
 box-shadow:0 15px 40px rgba(0,0,0,.15);
 }
 
-.form-section h2{text-align:center;margin-bottom:10px;}
-.form-section p{text-align:center;color:#555;margin-bottom:30px;}
-
 .form-row{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -208,8 +190,6 @@ border:1px solid #ccc;
 font-family:'Poppins',sans-serif;
 }
 
-.form-section textarea{min-height:120px;resize:vertical;}
-
 .form-section button{
 width:100%;
 padding:16px;
@@ -217,12 +197,9 @@ border:none;
 border-radius:30px;
 background:#1f2933;
 color:#fff;
-font-size:1rem;
 font-weight:600;
 cursor:pointer;
 }
-
-.form-section button:hover{background:#111827;}
 
 /* FOOTER */
 footer{
@@ -283,7 +260,7 @@ z-index:9999;
 
 <section class="hero">
 <h1>Monteurzimmer & Monteurwohnungen</h1>
-<p>Düsseldorf & Wuppertal · Ab 20 € · Direkt vom Vermieter</p>
+<p>Düsseldorf & Wuppertal · ab 20 € · Direkt vom Vermieter</p>
 </section>
 
 <div class="container">
@@ -291,12 +268,14 @@ z-index:9999;
 <h2>Unsere Standorte</h2>
 
 <div class="cards">
+
 <div class="card">
 <img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-1.jpg" alt="Monteurzimmer Düsseldorf">
 <div class="content">
 <h3>Düsseldorf</h3>
-<p>Erbacher Weg 17 · Nähe A46</p>
-<a href="duesseldorf.html">Mehr erfahren →</a>
+<p>Erbacher Weg 17 · zentral · Nähe A46</p>
+<a class="btn" href="duesseldorf.html">Zur Unterkunft</a><br>
+<a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Erbacher+Weg+17,+40227+Düsseldorf" target="_blank">Google-Profil & Bewertungen</a>
 </div>
 </div>
 
@@ -304,77 +283,40 @@ z-index:9999;
 <img src="images/wuppertal/haus-1.jpg" alt="Monteurzimmer Wuppertal">
 <div class="content">
 <h3>Wuppertal</h3>
-<p>Haaner Straße 30 · Nähe A46</p>
-<a href="wuppertal.html">Mehr erfahren →</a>
-</div>
+<p>Haaner Straße 30 · ruhige Lage · Nähe A46</p>
+<a class="btn" href="wuppertal.html">Zur Unterkunft</a><br>
+<a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Haaner+Straße+30,+42329+Wuppertal" target="_blank">Google-Profil & Bewertungen</a>
 </div>
 </div>
 
-<div class="seo-text">
-<h2>Monteurunterkünfte für Firmen & Handwerker</h2>
-<p>
-Unsere Monteurzimmer und Monteurwohnungen in Düsseldorf und Wuppertal sind ideal
-für Monteure, Handwerker, Firmen und Subunternehmer.
-Einzelbetten, WLAN, Waschmaschinen und kostenlose Parkplätze gehören zur Ausstattung.
-Dank der Nähe zur A46 sind Essen, Solingen, Haan, Mettmann, Neuss, Ratingen,
-Dormagen, Remscheid und das Bergische Land schnell erreichbar.
-</p>
-</div>
-
-<h2>Standorte auf Google Maps</h2>
-<div class="maps">
-<iframe src="https://www.google.com/maps?q=Erbacher+Weg+17,+40227+Düsseldorf&output=embed"></iframe>
-<iframe src="https://www.google.com/maps?q=Haaner+Straße+30,+42329+Wuppertal&output=embed"></iframe>
 </div>
 
 <h2>Was unsere Gäste sagen</h2>
 <div class="reviews">
-<div class="review"><div class="stars">★★★★★</div>Sehr sauber, Parkplatz direkt vor dem Haus.<br><small>Firmenkunde</small></div>
-<div class="review"><div class="stars">★★★★★</div>Ruhige Lage, WLAN stabil.<br><small>Handwerksbetrieb</small></div>
-<div class="review"><div class="stars">★★★★★</div>Direkter Vermieter, faire Preise.<br><small>Subunternehmer</small></div>
+<div class="review"><div class="stars">★★★★★</div>Sehr sauber, schnelle Anbindung, Parkplatz direkt vor dem Haus.</div>
+<div class="review"><div class="stars">★★★★★</div>Ruhige Lage, WLAN stabil – perfekt für längere Einsätze.</div>
+<div class="review"><div class="stars">★★★★★</div>Direkter Vermieter, flexibel & zuverlässig.</div>
 </div>
 
-</div>
-
-<!-- ANFRAGE -->
-<div class="form-section">
-<h2>Jetzt unverbindlich anfragen</h2>
-<p>Direkt vom Vermieter · Antwort meist innerhalb von 24 Stunden</p>
-
-<form action="mailto:mietzimmerkuethe@web.de" method="post" enctype="text/plain">
-<div class="form-row">
-<input type="text" name="Name" placeholder="Firma / Ansprechpartner *" required>
-<input type="tel" name="Telefon" placeholder="Telefon *" required>
-</div>
-
-<div class="form-row">
-<input type="email" name="Email" placeholder="E-Mail *" required>
-<select name="Standort" required>
-<option value="">Standort auswählen *</option>
-<option>Düsseldorf</option>
-<option>Wuppertal</option>
-</select>
-</div>
-
-<div class="form-row">
-<input type="date" name="Anreise" required>
-<input type="date" name="Abreise" required>
-</div>
-
-<textarea name="Nachricht" placeholder="Ihre Anfrage"></textarea>
-
-<button type="submit">Anfrage senden</button>
-</form>
 </div>
 
 <footer>
 <div class="footer-grid">
 <div>
-📞 0178 2145052<br>
-✉️ mietzimmerkuethe@web.de
+<strong>Monteurzimmer Küthe</strong><br>
+Düsseldorf & Wuppertal<br>
+Direkt vom Vermieter
 </div>
+
 <div>
-<a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
+📞 <a href="tel:01782145052">0178 2145052</a><br>
+✉️ <a href="mailto:mietzimmerkuethe@web.de">mietzimmerkuethe@web.de</a><br>
+💬 <a href="https://wa.me/491782145052">WhatsApp</a>
+</div>
+
+<div>
+<a href="impressum.html">Impressum</a><br>
+<a href="datenschutz.html">Datenschutz</a>
 </div>
 </div>
 
@@ -383,7 +325,7 @@ Dormagen, Remscheid und das Bergische Land schnell erreichbar.
 </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/491782145052" target="_blank">💬 WhatsApp</a>
+<a class="whatsapp-float" href="https://wa.me/491782145052">💬 WhatsApp</a>
 
 </body>
 </html>
