@@ -4,13 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Monteurzimmer Düsseldorf & Wuppertal | ab 20 € | Küthe</title>
+<title>Monteurzimmer Düsseldorf & Wuppertal ab 20 € | Direkt vom Vermieter</title>
 
 <meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal ab 20 € pro Person/Nacht. Einzelbetten, WLAN, kostenlose Parkplätze, Nähe A46. Direkt vom Vermieter – ideal für Monteure, Handwerker & Firmen.">
 <meta name="robots" content="index, follow">
 
 <link rel="icon" href="/favicon.ico">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5X6BNHSGDJ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-5X6BNHSGDJ', { anonymize_ip: true });
+</script>
 
 <style>
 body{
@@ -254,8 +263,8 @@ z-index:9999;
 </section>
 
 <div class="container">
-<h2>Unsere Standorte</h2>
 
+<h2>Unsere Standorte</h2>
 <div class="cards">
 <div class="card">
 <img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-1.jpg" alt="Monteurzimmer Düsseldorf">
@@ -280,10 +289,10 @@ z-index:9999;
 <h2>Monteurunterkünfte für Firmen & Handwerker</h2>
 <p>
 Unsere Monteurzimmer und Monteurwohnungen in Düsseldorf und Wuppertal sind ideal
-für Monteure, Handwerker, Firmen und Subunternehmer. Die Unterkünfte bieten
-Einzelbetten, WLAN, Waschmaschinen und kostenlose Parkplätze.
-Durch die Nähe zur A46 sind Einsätze in Essen, Solingen, Haan, Mettmann, Neuss,
-Ratingen, Dormagen, Remscheid und im gesamten Bergischen Land schnell erreichbar.
+für Monteure, Handwerker, Firmen und Subunternehmer. Einzelbetten, WLAN,
+Waschmaschinen und kostenlose Parkplätze gehören zur Ausstattung.
+Dank der Nähe zur A46 sind Essen, Solingen, Haan, Mettmann, Neuss, Ratingen,
+Dormagen, Remscheid und das gesamte Bergische Land schnell erreichbar.
 </p>
 </div>
 
@@ -299,6 +308,7 @@ Ratingen, Dormagen, Remscheid und im gesamten Bergischen Land schnell erreichbar
 <div class="review"><div class="stars">★★★★★</div>Ruhige Lage, ideal für längere Aufenthalte.<br><small>Handwerksbetrieb Essen</small></div>
 <div class="review"><div class="stars">★★★★★</div>Direkter Vermieter, schnelle Rückmeldung.<br><small>Subunternehmer Bergisches Land</small></div>
 </div>
+
 </div>
 
 <!-- ANFRAGE -->
@@ -306,7 +316,7 @@ Ratingen, Dormagen, Remscheid und im gesamten Bergischen Land schnell erreichbar
 <h2>Unverbindliche Anfrage</h2>
 <p>Direkt vom Vermieter · Antwort kurzfristig</p>
 
-<form action="mailto:mietzimmerkuethe@web.de" method="post" enctype="text/plain">
+<form onsubmit="gtag('event','form_submit',{event_category:'Kontakt'});" action="mailto:mietzimmerkuethe@web.de" method="post" enctype="text/plain">
 <div class="form-row">
 <input type="text" name="Firma" placeholder="Firma / Ansprechpartner *" required>
 <input type="tel" name="Telefon" placeholder="Telefon *" required>
@@ -332,20 +342,19 @@ Ratingen, Dormagen, Remscheid und im gesamten Bergischen Land schnell erreichbar
 </form>
 
 <p style="text-align:center;margin-top:15px;">
-oder <a href="https://wa.me/491782145052">per WhatsApp anfragen</a>
+oder <a href="https://wa.me/491782145052" onclick="gtag('event','whatsapp_click',{event_category:'Kontakt'});">per WhatsApp anfragen</a>
 </p>
 </div>
 
 <footer>
 <div class="footer-grid">
 <div>
-📞 0178 2145052 · 0172 2145052<br>
-✉️ mietzimmerkuethe@web.de
+<a href="tel:01782145052" onclick="gtag('event','phone_click',{event_category:'Kontakt'});">📞 0178 2145052</a><br>
+<a href="mailto:mietzimmerkuethe@web.de" onclick="gtag('event','email_click',{event_category:'Kontakt'});">✉️ mietzimmerkuethe@web.de</a>
 </div>
 <div>
 Düsseldorf & Wuppertal<br>
-<a href="impressum.html">Impressum</a> ·
-<a href="datenschutz.html">Datenschutz</a>
+<a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
 </div>
 </div>
 
@@ -354,7 +363,10 @@ Düsseldorf & Wuppertal<br>
 </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/491782145052" target="_blank">
+<a class="whatsapp-float"
+href="https://wa.me/491782145052"
+onclick="gtag('event','whatsapp_click',{event_category:'Kontakt'});"
+target="_blank">
 💬 WhatsApp
 </a>
 
