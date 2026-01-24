@@ -33,29 +33,42 @@ line-height:1.6;
 /* HEADER */
 header{
 background:#1f2933;
-padding:15px 20px;
+padding:18px 20px;
+}
+
+.nav-box{
+max-width:1100px;
+margin:auto;
+background:#ffffff;
+border-radius:14px;
+padding:14px 25px;
+box-shadow:0 12px 30px rgba(0,0,0,.18);
 }
 
 nav{
 display:flex;
 justify-content:center;
-gap:25px;
+gap:30px;
 flex-wrap:wrap;
 }
 
 nav a{
-color:#fff;
+color:#1f2933;
 text-decoration:none;
-font-weight:500;
+font-weight:600;
+padding:8px 14px;
+border-radius:8px;
 }
 
-nav a:hover{color:#d6b77b;}
+nav a:hover{
+background:#f1f1f1;
+}
 
 /* CONTENT */
 .container{
 max-width:1100px;
 margin:auto;
-padding:35px 20px;
+padding:40px 20px;
 }
 
 h1{text-align:center;margin-bottom:5px;}
@@ -86,18 +99,15 @@ margin:40px 0;
 width:100%;
 height:280px;
 border:0;
-border-radius:12px;
+border-radius:14px;
 filter:grayscale(100%);
 }
 
 .review-box{
 background:#fff;
 padding:30px;
-border-radius:12px;
-box-shadow:0 8px 25px rgba(0,0,0,.1);
-display:flex;
-flex-direction:column;
-justify-content:center;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
 text-align:center;
 }
 
@@ -106,16 +116,6 @@ color:#d6b77b;
 font-size:1.4rem;
 margin-bottom:10px;
 }
-
-.review-box a{
-margin-top:15px;
-display:inline-block;
-font-weight:600;
-color:#1f2933;
-text-decoration:none;
-}
-
-.review-box a:hover{color:#000;}
 
 /* FEATURES */
 .features{
@@ -127,9 +127,9 @@ margin-top:35px;
 
 .feature{
 background:#fff;
-padding:20px;
-border-radius:10px;
-box-shadow:0 4px 15px rgba(0,0,0,.08);
+padding:22px;
+border-radius:14px;
+box-shadow:0 8px 25px rgba(0,0,0,.1);
 }
 
 /* HEADINGS */
@@ -151,7 +151,7 @@ margin-top:15px;
 
 .gallery img{
 width:100%;
-border-radius:8px;
+border-radius:10px;
 box-shadow:0 4px 12px rgba(0,0,0,.1);
 object-fit:cover;
 }
@@ -198,7 +198,6 @@ z-index:9999;
 
 @media(max-width:768px){
 .maps-reviews{grid-template-columns:1fr;}
-.features{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -206,11 +205,13 @@ z-index:9999;
 <body>
 
 <header>
-<nav>
-<a href="index.html">Startseite</a>
-<a href="duesseldorf.html">Düsseldorf</a>
-<a href="wuppertal.html">Wuppertal</a>
-</nav>
+  <div class="nav-box">
+    <nav>
+      <a href="index.html">Startseite</a>
+      <a href="duesseldorf.html">Düsseldorf</a>
+      <a href="wuppertal.html">Wuppertal</a>
+    </nav>
+  </div>
 </header>
 
 <div class="container">
