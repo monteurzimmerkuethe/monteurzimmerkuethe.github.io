@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Monteurzimmer Düsseldorf – zentrale Monteurwohnung ab 20 € | Küthe</title>
+<title>Monteurzimmer Düsseldorf – Monteurwohnungen ab 20 € | Küthe</title>
 
-<meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf (40227, Erbacher Weg). Einzelbetten, WLAN, Küche, kostenlose Parkplätze & Nähe A46. Direkt vom Vermieter – ideal für Monteure, Handwerker & Firmen ab 20 € pro Person/Nacht.">
+<meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf (40227, Erbacher Weg 17). Einzelbetten, WLAN, Küche & kostenlose Parkplätze. Direkt vom Vermieter – ab 20 € pro Person/Nacht.">
 <meta name="robots" content="index, follow">
 
 <link rel="icon" href="/favicon.ico">
@@ -33,29 +33,42 @@ line-height:1.6;
 /* HEADER */
 header{
 background:#1f2933;
-padding:15px 20px;
+padding:18px 20px;
+}
+
+.nav-box{
+max-width:1100px;
+margin:auto;
+background:#ffffff;
+border-radius:14px;
+padding:14px 25px;
+box-shadow:0 12px 30px rgba(0,0,0,.18);
 }
 
 nav{
 display:flex;
 justify-content:center;
-gap:25px;
+gap:30px;
 flex-wrap:wrap;
 }
 
 nav a{
-color:#fff;
+color:#1f2933;
 text-decoration:none;
-font-weight:500;
+font-weight:600;
+padding:8px 14px;
+border-radius:8px;
 }
 
-nav a:hover{color:#d6b77b;}
+nav a:hover{
+background:#f1f1f1;
+}
 
 /* CONTENT */
 .container{
 max-width:1100px;
 margin:auto;
-padding:35px 20px;
+padding:40px 20px;
 }
 
 h1{text-align:center;margin-bottom:5px;}
@@ -86,18 +99,15 @@ margin:40px 0;
 width:100%;
 height:280px;
 border:0;
-border-radius:12px;
+border-radius:14px;
 filter:grayscale(100%);
 }
 
 .review-box{
 background:#fff;
 padding:30px;
-border-radius:12px;
-box-shadow:0 8px 25px rgba(0,0,0,.1);
-display:flex;
-flex-direction:column;
-justify-content:center;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
 text-align:center;
 }
 
@@ -108,14 +118,12 @@ margin-bottom:10px;
 }
 
 .review-box a{
-margin-top:15px;
 display:inline-block;
+margin-top:15px;
 font-weight:600;
 color:#1f2933;
 text-decoration:none;
 }
-
-.review-box a:hover{color:#000;}
 
 /* FEATURES */
 .features{
@@ -127,9 +135,9 @@ margin-top:35px;
 
 .feature{
 background:#fff;
-padding:20px;
-border-radius:10px;
-box-shadow:0 4px 15px rgba(0,0,0,.08);
+padding:22px;
+border-radius:14px;
+box-shadow:0 8px 25px rgba(0,0,0,.1);
 }
 
 /* HEADINGS */
@@ -151,7 +159,7 @@ margin-top:15px;
 
 .gallery img{
 width:100%;
-border-radius:8px;
+border-radius:10px;
 box-shadow:0 4px 12px rgba(0,0,0,.1);
 object-fit:cover;
 }
@@ -198,7 +206,6 @@ z-index:9999;
 
 @media(max-width:768px){
 .maps-reviews{grid-template-columns:1fr;}
-.features{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -206,11 +213,13 @@ z-index:9999;
 <body>
 
 <header>
-<nav>
-<a href="index.html">Startseite</a>
-<a href="duesseldorf.html">Düsseldorf</a>
-<a href="wuppertal.html">Wuppertal</a>
-</nav>
+  <div class="nav-box">
+    <nav>
+      <a href="index.html">Startseite</a>
+      <a href="duesseldorf.html">Düsseldorf</a>
+      <a href="wuppertal.html">Wuppertal</a>
+    </nav>
+  </div>
 </header>
 
 <div class="container">
@@ -221,30 +230,25 @@ z-index:9999;
 </div>
 
 <p class="intro">
-Unsere Monteurwohnungen in Düsseldorf bieten komfortable, saubere und voll ausgestattete
-Unterkünfte für Monteure, Handwerker, Firmen und Subunternehmer.
-Die zentrale Lage nahe der A46 ermöglicht schnelle Einsätze in Düsseldorf,
-Neuss, Ratingen, Hilden, Dormagen und dem gesamten Ruhrgebiet.
+Unsere Monteurwohnungen in Düsseldorf bieten saubere, voll ausgestattete Unterkünfte
+für Monteure, Handwerker und Firmen. Zentrale Lage nahe der A46 – ideal für Einsätze
+in Düsseldorf, Neuss, Ratingen, Hilden und dem Ruhrgebiet.
 </p>
 
-<!-- GOOGLE MAPS + BEWERTUNGEN -->
 <div class="maps-reviews">
-
 <iframe src="https://www.google.com/maps?q=Erbacher+Weg+17,+40227+Düsseldorf&output=embed"></iframe>
 
 <div class="review-box">
 <div class="stars">★★★★★</div>
 <strong>Sehr gut bewertet auf Google</strong>
-<p>Unsere Monteurunterkunft in Düsseldorf wird von Firmen & Monteuren
-für Sauberkeit, Lage und direkte Vermietung geschätzt.</p>
+<p>Unsere Monteurunterkunft in Düsseldorf überzeugt durch
+Sauberkeit, Lage und direkte Vermietung.</p>
 
-<a href="https://share.google/wuvHxQjsp4Qe9Mgfl"
-   target="_blank"
-   onclick="gtag('event','google_review_click',{event_category:'Vertrauen'});">
+<a href="https://share.google/mFv7ltKjnPHNrTyO4" target="_blank"
+onclick="gtag('event','google_review_click',{event_category:'Vertrauen'});">
 👉 Bewertungen auf Google ansehen
 </a>
 </div>
-
 </div>
 
 <div class="features">
@@ -256,11 +260,11 @@ für Sauberkeit, Lage und direkte Vermietung geschätzt.</p>
 <div class="feature">💶 Ab 20 € pro Person / Nacht</div>
 </div>
 
-<h2>Monteurwohnung Düsseldorf – bis 8 Personen</h2>
+<h2>Monteurwohnung – bis 8 Personen</h2>
 
 <h3>Schlafzimmer</h3>
 <div class="gallery">
-<img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-1.jpg" alt="Monteurzimmer Düsseldorf Schlafzimmer">
+<img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-1.jpg">
 <img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-2.jpg">
 <img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-3.jpg">
 <img src="images/duesseldorf/wohnung-1/schlafzimmer/schlafzimmer-4.jpg">
@@ -295,12 +299,9 @@ Erbacher Weg 17<br>
 </div>
 
 <div>
-<a href="tel:01782145052" onclick="gtag('event','phone_click',{event_category:'Kontakt'});">📞 0178 2145052</a><br>
-<a href="tel:01722145052" onclick="gtag('event','phone_click',{event_category:'Kontakt'});">📞 0172 2145052</a><br>
-<a href="mailto:mietzimmerkuethe@web.de" onclick="gtag('event','email_click',{event_category:'Kontakt'});">✉️ mietzimmerkuethe@web.de</a><br>
-<a href="https://wa.me/491782145052"
-   onclick="gtag('event','whatsapp_click',{event_category:'Kontakt'});"
-   target="_blank">💬 WhatsApp schreiben</a>
+<a href="tel:01782145052">📞 0178 2145052</a><br>
+<a href="mailto:mietzimmerkuethe@web.de">✉️ mietzimmerkuethe@web.de</a><br>
+<a href="https://wa.me/491782145052" target="_blank">💬 WhatsApp schreiben</a>
 </div>
 
 <div>
@@ -315,11 +316,7 @@ Erbacher Weg 17<br>
 </div>
 </footer>
 
-<a class="whatsapp"
-href="https://wa.me/491782145052"
-onclick="gtag('event','whatsapp_click',{event_category:'Kontakt'});">
-💬
-</a>
+<a class="whatsapp" href="https://wa.me/491782145052">💬</a>
 
 </body>
 </html>
