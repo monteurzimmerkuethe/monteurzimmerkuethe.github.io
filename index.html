@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Monteurzimmer Düsseldorf & Wuppertal | ab 20 € | Küthe</title>
+<title>Monteurzimmer Düsseldorf & Wuppertal | ab 20 € | Direkt vom Vermieter</title>
 
-<meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf & Wuppertal ab 20 €. Einzelbetten, WLAN, Parkplätze, Nähe A46. Direkt vom Vermieter.">
+<meta name="description" content="Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal ab 20 € pro Person/Nacht. Einzelbetten, WLAN, Parkplätze & Nähe A46. Direkt vom Vermieter – ideal für Monteure & Firmen.">
 <meta name="robots" content="index, follow">
 
 <link rel="icon" href="/favicon.ico">
@@ -25,7 +25,7 @@ gtag('config', 'G-5X6BNHSGDJ', { anonymize_ip: true });
 body{
 margin:0;
 font-family:'Poppins',sans-serif;
-background:#f4f6f8;
+background:#f4f4f4;
 color:#222;
 line-height:1.6;
 }
@@ -35,106 +35,95 @@ header{
 position:sticky;
 top:0;
 z-index:1000;
-background:#ffffff;
-box-shadow:0 6px 20px rgba(0,0,0,.08);
-padding:14px 20px;
+background:#f4f4f4;
+padding:18px 20px;
 }
 
-nav{
-display:flex;
-justify-content:center;
-gap:12px;
-flex-wrap:wrap;
-}
-
-nav a{
-color:#1f2933;
-text-decoration:none;
-font-weight:500;
-padding:10px 18px;
-border-radius:12px;
-border:1px solid #e2e6ea;
-background:#f8fafc;
-transition:all .2s ease;
-}
-
-nav a:hover{
-background:#d6b77b;
-border-color:#d6b77b;
-color:#1f2933;
-}
-
-nav a.active{
+/* NAV TABLE */
+.nav-table{
+max-width:1100px;
+margin:auto;
 background:#1f2933;
-border-color:#1f2933;
-color:#fff;
+border-radius:14px;
+box-shadow:0 12px 35px rgba(0,0,0,.25);
+overflow:hidden;
 }
+
+.nav-table nav{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+}
+
+.nav-table a{
+text-align:center;
+padding:15px 10px;
+text-decoration:none;
+font-weight:600;
+color:#e5e7eb;
+border-right:1px solid rgba(255,255,255,.15);
+transition:.2s;
+}
+
+.nav-table a:last-child{border-right:none;}
+.nav-table a:hover{background:#111827;}
+.nav-table a.active{background:#111827;color:#fff;}
 
 /* HERO */
 .hero{
-background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
 url("images/start-haus.jpg") center/cover no-repeat;
 color:#fff;
 text-align:center;
-padding:100px 20px;
+padding:95px 20px;
 }
 
-.hero h1{font-size:2.5rem;margin-bottom:12px;}
-.hero p{font-size:1.15rem;opacity:.95;}
+.hero h1{font-size:2.4rem;margin-bottom:10px;}
+.hero p{font-size:1.1rem;}
 
 /* CONTENT */
 .container{
 max-width:1100px;
 margin:auto;
-padding:70px 20px;
+padding:60px 20px;
 }
 
-h2{text-align:center;margin-bottom:35px;}
+h2{text-align:center;margin-bottom:30px;}
 
 /* CARDS */
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-margin-bottom:70px;
+gap:25px;
+margin-bottom:60px;
 }
 
 .card{
 background:#fff;
-border-radius:16px;
+border-radius:14px;
 overflow:hidden;
-box-shadow:0 15px 40px rgba(0,0,0,.12);
-transition:transform .2s ease;
+box-shadow:0 12px 35px rgba(0,0,0,.15);
 }
-
-.card:hover{transform:translateY(-4px);}
 
 .card img{
 width:100%;
-height:210px;
+height:200px;
 object-fit:cover;
 }
 
-.card .content{padding:24px;}
+.card .content{padding:22px;}
 
 .card h3{margin-top:0;}
 
-.card a{
-display:inline-block;
-margin-top:10px;
-font-weight:600;
-text-decoration:none;
-}
-
-/* BUTTONS */
 .btn{
 display:inline-block;
-margin-top:12px;
-padding:11px 20px;
+margin-top:10px;
+padding:10px 18px;
 border-radius:30px;
 background:#1f2933;
 color:#fff;
+text-decoration:none;
 font-size:.9rem;
+font-weight:600;
 }
 
 .btn.secondary{
@@ -146,24 +135,24 @@ color:#1f2933;
 .reviews{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-margin-top:40px;
+gap:25px;
+margin-top:30px;
 }
 
 .review{
 background:#fff;
-padding:28px;
-border-radius:16px;
-box-shadow:0 12px 35px rgba(0,0,0,.1);
+padding:25px;
+border-radius:14px;
+box-shadow:0 12px 35px rgba(0,0,0,.15);
 }
 
-.review .stars{color:#d6b77b;font-size:1.25rem;}
+.review .stars{color:#d6b77b;font-size:1.2rem;}
 
 /* FOOTER */
 footer{
 background:#1f2933;
 color:#eee;
-padding:55px 20px;
+padding:45px 20px;
 }
 
 .footer-grid{
@@ -171,14 +160,14 @@ max-width:1100px;
 margin:auto;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:35px;
+gap:30px;
 }
 
 footer a{color:#d6b77b;text-decoration:none;}
 
 .footer-bottom{
 text-align:center;
-margin-top:35px;
+margin-top:30px;
 font-size:.85rem;
 opacity:.8;
 }
@@ -194,12 +183,12 @@ padding:14px 22px;
 border-radius:50px;
 font-weight:600;
 text-decoration:none;
-box-shadow:0 10px 30px rgba(0,0,0,.3);
+box-shadow:0 8px 25px rgba(0,0,0,.3);
 z-index:9999;
 }
 
 @media(max-width:768px){
-.hero h1{font-size:1.8rem;}
+.hero h1{font-size:1.7rem;}
 }
 </style>
 </head>
@@ -207,11 +196,13 @@ z-index:9999;
 <body>
 
 <header>
-<nav>
-<a href="index.html" class="active">Startseite</a>
-<a href="duesseldorf.html">Düsseldorf</a>
-<a href="wuppertal.html">Wuppertal</a>
-</nav>
+  <div class="nav-table">
+    <nav>
+      <a href="index.html" class="active">Startseite</a>
+      <a href="duesseldorf.html">Düsseldorf</a>
+      <a href="wuppertal.html">Wuppertal</a>
+    </nav>
+  </div>
 </header>
 
 <section class="hero">
