@@ -1,1 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<title>Monteurzimmer Anfrage | Düsseldorf & Wuppertal | Küthe</title>
+
+<meta name="description" content="Unverbindliche Anfrage für Monteurzimmer & Monteurwohnungen in Düsseldorf und Wuppertal. Direkt vom Vermieter – ideal für Firmen, Monteure & Handwerker.">
+<meta name="robots" content="index, follow">
+
+<link rel="icon" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5X6BNHSGDJ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-5X6BNHSGDJ', { anonymize_ip: true });
+</script>
+
+<style>
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f4f4f4;
+color:#222;
+line-height:1.6;
+}
+
+/* HEADER */
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:#f4f4f4;
+padding:18px 20px;
+}
+
+/* NAV TABLE */
+.nav-table{
+max-width:1100px;
+margin:auto;
+background:#1f2933;
+border-radius:14px;
+box-shadow:0 12px 35px rgba(0,0,0,.25);
+overflow:hidden;
+}
+
+.nav-table nav{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+}
+
+.nav-table a{
+text-align:center;
+padding:15px 10px;
+text-decoration:none;
+font-weight:600;
+color:#e5e7eb;
+border-right:1px solid rgba(255,255,255,.15);
+transition:.2s;
+}
+
+.nav-table a:last-child{border-right:none;}
+.nav-table a:hover{background:#111827;}
+.nav-table a.active{background:#111827;color:#fff;}
+
+/* HERO */
+.hero{
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("images/start-haus.jpg") center/cover no-repeat;
+color:#fff;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{font-size:2.1rem;margin-bottom:10px;}
+.hero p{font-size:1.05rem;}
+
+/* CONTENT */
+.container{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+}
+
+h2{text-align:center;margin-bottom:25px;}
+
+/* FORM */
+.form-box{
+background:#fff;
+padding:45px;
+border-radius:16px;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.form-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-bottom:20px;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea{
+width:100%;
+padding:14px;
+border-radius:8px;
+border:1px solid #ccc;
+font-family:'Poppins',sans-serif;
+font-size:.95rem;
+}
+
+.form-box textarea{resize:vertical;min-height:120px;}
+
+.form-box button{
+width:100%;
+padding:16px;
+border:none;
+border-radius:30px;
+background:#1f2933;
+color:#fff;
+font-weight:600;
+font-size:1rem;
+cursor:pointer;
+}
+
+.form-box button:hover{background:#111827;}
+
+/* FOOTER */
+footer{
+background:#1f2933;
+color:#eee;
+padding:45px 20px;
+margin-top:70px;
+}
+
+.footer-grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+}
+
+footer a{color:#d6b77b;text-decoration:none;}
+
+.footer-bottom{
+text-align:center;
+margin-top:30px;
+font-size:.85rem;
+opacity:.8;
+}
+
+/* WHATSAPP */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:14px 22px;
+border-radius:50px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 8px 25px rgba(0,0,0,.3);
+z-index:9999;
+}
+
+@media(max-width:768px){
+.form-row{grid-template-columns:1fr;}
+.hero h1{font-size:1.6rem;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-table">
+    <nav>
+      <a href="index.html">Startseite</a>
+      <a href="duesseldorf.html">Düsseldorf</a>
+      <a href="wuppertal.html">Wuppertal</a>
+      <a href="anfrage.html" class="active">Anfrage</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+<h1>Unverbindliche Anfrage</h1>
+<p>Monteurzimmer & Monteurwohnungen · Direkt vom Vermieter</p>
+</section>
+
+<div class="container">
+
+<h2>Ihre Anfrage an Monteurzimmer Küthe</h2>
+
+<div class="form-box">
+<form action="mailto:mietzimmerkuethe@web.de" method="post" enctype="text/plain">
+
+<div class="form-row">
+<input type="text" name="Firma" placeholder="Firma (optional)">
+<input type="text" name="Ansprechpartner" placeholder="Ansprechpartner *" required>
+</div>
+
+<div class="form-row">
+<input type="email" name="E-Mail" placeholder="E-Mail *" required>
+<input type="tel" name="Telefon" placeholder="Telefon *" required>
+</div>
+
+<div class="form-row">
+<select name="Standort" required>
+<option value="">Standort *</option>
+<option>Düsseldorf</option>
+<option>Wuppertal</option>
+<option>Beide Standorte</option>
+</select>
+
+<select name="Personen" required>
+<option value="">Personen *</option>
+<option>1–2</option>
+<option>3–5</option>
+<option>6–8</option>
+<option>Mehr als 8</option>
+</select>
+</div>
+
+<div class="form-row">
+<input type="date" name="Anreise" required>
+<input type="date" name="Abreise" required>
+</div>
+
+<textarea name="Nachricht" placeholder="Ihre Nachricht / Firmeninfos / Zeitraum"></textarea>
+
+<button type="submit">Anfrage absenden</button>
+
+</form>
+</div>
+
+</div>
+
+<footer>
+<div class="footer-grid">
+<div>
+<strong>Monteurzimmer Küthe</strong><br>
+Düsseldorf & Wuppertal<br>
+Direkt vom Vermieter
+</div>
+
+<div>
+📞 <a href="tel:01782145052">0178 2145052</a><br>
+✉️ <a href="mailto:mietzimmerkuethe@web.de">mietzimmerkuethe@web.de</a><br>
+💬 <a href="https://wa.me/491782145052">WhatsApp</a>
+</div>
+
+<div>
+<a href="impressum.html">Impressum</a><br>
+<a href="datenschutz.html">Datenschutz</a>
+</div>
+</div>
+
+<div class="footer-bottom">
+© 2026 Monteurzimmer Küthe
+</div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/491782145052">💬 WhatsApp</a>
+
+</body>
+</html>
